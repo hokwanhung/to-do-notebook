@@ -25,13 +25,17 @@
       -ans: `break` is used to exit from the loop.
             `return` is used to go back to the step where the method was called or to stop further execution.
             `continue` is used to break one iteration in the loop and continues with the next iteration.
-**3b. Why is `try-and-catch` and `while(true)` not recommened in java?
+**3b. Why is `try-and-catch` and `while(true)` not recommened in java?**
       -ans: The usage of `while(true)` depends on situations whether `while(true)`+`break` or `boolean(flag)` fits better.
             For `try-and-catch`, appears to be discussion about whether stop when errors happens is good or not.
+            **At least, it seems to be a good habit to not catch all exception, only the exception in needed.**
 **4. How to power up a number?**
      -ans: `Math.pow([baseDouble], [exponentDouble])`
      -explanation: **Noticeably, java allows the usage of nested methods.**
                    **It is more appriopriate to use double type in mathematics calculation.**
 **5. How to root down a number?**
      -ans: `math.sqrt([variableName])`
+**6. How to convert from String to integer?**
+     -ans: `[variableName] = Integer.parseInt([stringName])`
+     -explanation: Scan through the string to find any integer value.
      
