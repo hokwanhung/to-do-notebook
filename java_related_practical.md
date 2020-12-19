@@ -2,17 +2,18 @@
 ## Rules:
    1. Use my own language to explain the knowledge(unless no better explanation can be think of).
    2. Do revision before going to bed every day.
+   
 ## 2020.12.18
 **1. How to insert PI into calculation?**
-     -ans: `Math.PI`
-     -explanation: static double in Class `Math` (java.lang.Math - no requirement for installation of the class.))
-**2. How to cor. to decimal places (For example 4 decimal places)**
-     -ans: `DecimalFormat [variableName] = new DecimalFormat(#.####)
-           *[variable].setRoundingMode(RoudingMode [roudingMode]) (optional)*
-           [variable].format([inputVariableName])`
-     -explanation: subclass of `NumberFormat` (the naming explains itself)
-                   [roudingMode] e.g. CEILLING / DOWN / FLOOR / UP
-**3. What is try-and-catch in Java Exceptions?**
+   - ans: `Math.PI`
+   - explanation: static double in Class `Math` (java.lang.Math - no requirement for installation of the class.))  
+**2. How to cor. to decimal places (For example 4 decimal places)?**
+   - ans: `DecimalFormat [variableName] = new DecimalFormat(#.####)  
+          *[variable].setRoundingMode(RoudingMode [roudingMode]) (optional)*  
+          [variable].format([inputVariableName])`
+   - explanation: subclass of `NumberFormat` (the naming explains itself)  
+                   [roudingMode] e.g. CEILLING / DOWN / FLOOR / UP  
+**3. What is try-and-catch in Java Exceptions?**  
      -ans: `try {
            // Block of code to try
            } catch (Exception e) {
@@ -38,4 +39,18 @@
 **6. How to convert from String to integer?**
      -ans: `[variableName] = Integer.parseInt([stringName])`
      -explanation: Scan through the string to find any integer value.
+
+
+## 2020.12.19
+**7. How to check if the input is a positive number, zero or a negative number?**
+     -ans: `Integer.signum([variableName])`
+     -explanation: Positive number = "1", zero = "0" and negative number = "-1".
+**8. What is object-oriented programming?**
+     -ans: **Encapsulation + Abstraction + Inheritance + polymorphism**
+     -explanation: Spegatti coding (Proceduaral Programming) = coding with loads of interdependent functions, which makes regulation much harder.
+                   Encapsulation = the grouping of related variables(referred as property) and functions (referred as methods) into a unit(referred as object).
+                   -Parameters are less to not required as it would be automatically collected to the function.
+                   Abstraction = 
+           
+     
      
