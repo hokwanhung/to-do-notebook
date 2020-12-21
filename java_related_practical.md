@@ -1,8 +1,9 @@
 # java_related
 ## Rules:
-   1. Use my own language to explain the knowledge(unless no better explanation can be think of).
+   1. Try to use my own language to explain the knowledge(unless it used up too much time).
    2. Do revision before going to bed every day.
-   3. Test the codes immediately after a part is finished.
+   3. **Test the codes immediately after a part is finished.**
+   4. **If a task is complicated, break the project down with sub-methods with requirements for every one of them.**
 ## Tricks for Github documenting:
    1. The quotes in the quoting code do not follow any other Github documenting rules.
    2. No need to add spacebars to seperate lines before and after quotes.
@@ -175,6 +176,7 @@
    - ans:
       - **`==` tests for reference equality(whether they are the same object).**\
          - ** It works with int and more as it is directed to handling the values in such cases.**
+         - **In condition judgements, "==" must be used instead of "=". Although no errors are shown.**
       - **`.equals()` tests for value equality(whether they are logically "equal").**
       - **`Objects.equals()` checks for `null` before calling `.equals()` so you don't have to(PreferredMethod)**
          - Prefferred always unless dealing with interned string.
@@ -212,5 +214,34 @@
       - if = specify a block of code to be executed, if a specified condition is true.
       - else = specify a block of code to be executed, if the same condition is false.
       - else if = specify a new condition to test, if the first condition is false.
+  
+## 2020.12.21
+**16. Any alternative for `Integer.parseInt(String)?`**
+   - ans: `Integer.valueOf(String)`
+   - explanation: 
+      - `parseInt(String)` returns a primitive `int`.
+      - `valueOf(String)` returns a `new` `Integer()` object.
       
-      
+**16a. What is primitive types?**
+   - ans: Most basic data types (a total of 8 types) available within the Java Language.
+   - explanation: boolean, byte, char, short, int, long, float and double.
+   
+**16b. How do we convert `int` to `String`?**
+   - ans: `Integer.toString()` or `String.valueOf()`
+   - explanation:
+      - `toString()` method pass a `Integer` class'object through and return a `String`.
+      - `valueOf()` method allows both integer (as an `int` or `Integer`) and returna a `String`.
+
+**16c. What is an `Integer` class objects?**
+   - ans: `Integer class` is a wrapped class for the primitive type `int` to perform serveral actions.
+   - Explanation: 
+      - For example, to convert an `int` into a `String`.
+      - An `object` of `Integer class` can hold a single `int` value.
+**17. How can I make a try-and-catch method with while loop function?**
+   - ans: Use a  `while` loop (either with `true and break` or `boolean(flag)`) to wrap the try-and-catch method.
+   
+**18. What if I construct a `switch` statement with no `break`?**
+   - ans: The flow of control would fall through to subsequent cases until a break is reached.
+   
+**19. Can a string type do math calculations?**
+   - ans: Through some advanced techniques, yes I guess.
