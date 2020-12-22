@@ -237,6 +237,7 @@
    - Explanation: 
       - For example, to convert an `int` into a `String`.
       - An `object` of `Integer class` can hold a single `int` value.
+      
 **17. How can I make a try-and-catch method with while loop function?**
    - ans: Use a  `while` loop (either with `true and break` or `boolean(flag)`) to wrap the try-and-catch method.
    
@@ -245,3 +246,21 @@
    
 **19. Can a string type do math calculations?**
    - ans: Through some advanced techniques, yes I guess.
+
+## 2020.12.22
+**20. Introduce some simple math functions?**
+   - ans:
+      - `Math.random()`
+         - Generate a doulbe number equals to 0.0 and less than 1.0.
+      - `Math.round()`
+         - Rounds a double number to the nearest integer.
+      - `Math.floor()`
+         - Rounds a double number downward to the nearest integer (returns in double type).
+      - `Math.ceil()`
+         - Rounds a double number upward to the nearest integer (returns in double type).
+         
+**21. What about doing calculation in `return`?**
+   - ans: simple calculation is acceptable, but it's better to assign it to a variable first for better clarification.
+   
+**22. How to do more than one increment?**
+   - ans: for example, `i+=2`
