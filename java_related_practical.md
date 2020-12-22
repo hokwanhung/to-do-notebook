@@ -264,3 +264,44 @@
    
 **22. How to do more than one increment?**
    - ans: for example, `i+=2`
+
+**23. How to find out a prime number?(Insufficient answer)**
+   - ans: `2n+1`
+   - explanation: 
+      - Prime no. is a number only divisible by 1 and itself.
+      - Every `2n+1` is a prime number.
+      - n is the available range of divisor as if number bigger than n must have remainder.
+        - As `divisible` means there should be no remainder(the quotient must be an integer.)
+        
+**24. How do we convert a `double` into an `integer`?**
+   - ans: 
+      - `int [newVariableName] = (int) [doubleVariableName]`
+         - Typecasting technique, truncates all digits after decimal point (~Math.floor()).
+      - `Math.round()`
+         - As above in Q20.
+      - `iny [newVariableName] = [doubleVariableName].intValue()`
+         - Also truncates all digits after decimal point (~Math.floor()).
+         
+**24a. What is typecasting techniques?**
+   - ans: Assignment of one primitive data type to another with a value.
+   - explanation: 
+      - **Widening Casting (automatically): `byte` to `short` to `char` to `int` to `long` to `float` to `double`**
+      - **Narrowing Casting (manually): Vice versa.**
+         - **It's nothing wrong if a `double` type of data is actually an integer and thus narrowing it down to `int`.**
+         - **However, this technique should not be used if a data has contains information that only current data type owns.**
+      
+**25. What does `>>` do in java?**
+   - ans: `>>` shifts the bits towards the right one bit.
+   - explanation:
+      - Binary devices represents numbers as a sequence of 1s and 0s.
+      - `>>` is part of the Bitshifting, which moves those sequences of 1s and 0s left or right.
+         - `>>=` means `[variable] = [variable] >> 1/0` (one of the short-hand operators).
+ 
+**26. How to define an array?**
+   - ans: `[dataType][] [variableName] = {[value], [value], ...}` or `[dataType][] [variableName] = new [dataType][[numbers]]`
+   - Explanation: The first one defines an array with actual values while the second one only reserves spots for values.
+  
+**26a. How to pass an array to methods?**
+   - ans: for example, `public static void [methodName](int[] [arrayName])`
+   - explantion: just like any other variables.
+   
