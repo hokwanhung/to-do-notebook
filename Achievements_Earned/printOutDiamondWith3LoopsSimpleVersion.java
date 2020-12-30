@@ -31,7 +31,7 @@
  */
 
 // First, by looking at both the trends of no. of spaces and stars, both of them have their turning point on line 5.
-// Noticably, line 5 is also the middle point which is Math.ceil([no.ofLines]/2) or [no.ofLines]/2 + 1.
+// Noticeably, line 5 is also the middle point which is Math.ceil([no.ofLines]/2) or [no.ofLines]/2 + 1.
 // It would be much more easier to find out the pattern as if we divide it into two patterns, i.e. i <= 5 and i>=6.
 // This would be i <= Math.ceil([no.ofLines]/2) and i > Math.ceil([no.ofLines]/2) correspondingly.
 // The i <= 5 pattern could be skipped from explanation.
