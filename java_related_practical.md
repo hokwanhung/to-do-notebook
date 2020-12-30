@@ -305,3 +305,27 @@
    - ans: for example, `public static void [methodName](int[] [arrayName])`
    - explantion: just like any other variables.
    
+## 2020.12.30
+**27. How to detect whether an integer is odd or even?**
+   - ans: `if ((x % 2) == 0) { even... } else { odd... }` or `if ((x & 1) == 0) { even...} else { odd... }`
+   - explanation:
+      - The first one is to check by modulus the target by 2.
+      - The second one is to check the low bit if it is set off, which would be an even number.
+      
+**27a. What is the differences between `&` and `&&`?**
+   - ans: 
+      - `&` is bitwise while `&&` is logical.
+      - `&` evaluates both sides of the operation.
+         - Any change in the data values due to the conditions will only be reflected in this case.
+      - `&&` evaluates the left side of the operation, if it is `true`, it continues and evaluates the right side.
+         - If any condition is false, it does not evaluate the statment any further.
+      
+**27b. What is `&`?**
+   - ans: 
+      - As a relational operator(check the above 27a).
+      - As a Bitwise AND: & operator.
+         - Used for adding Bitwise numbers in Java.
+
+**27c. What is Bitwise numbers?**
+   - ans: binary numbers stored in the form of integers.
+   - explanation: All encoding and decoding of data is done in bits, as packing of a huge amount of information into a tiny space.
