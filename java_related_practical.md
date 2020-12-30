@@ -329,3 +329,6 @@
 **27c. What is Bitwise numbers?**
    - ans: binary numbers stored in the form of integers.
    - explanation: All encoding and decoding of data is done in bits, as packing of a huge amount of information into a tiny space.
+
+**28. How does integer performs division?**
+   - ans: **If an integer performs division, the remainder would be thrown away.**
