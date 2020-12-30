@@ -14,7 +14,9 @@
 // The above diamond contains of 9 lines and at most 9 slots to obtain the "*".
 
 // In this class, I listed out all opportunities and find out the common factors among them, with the "divide-and-conquer" method.
-// Though, the answer provided below is far away from the perfect answer, but a demonstration of the method I used and how I first deal with it.
+// Though, the answer provided below is nothing close to the perfect answer, but a demonstration of the method I used and how I first deal with it.
+// Though it is probably not appriopriate to design such algorithm, not still a memorable piece of codes to my own work.
+
 // To start with, it is much easier to plot a graph and look at it:
 /* no. of lines --- no. of spaces --- no. of stars
  *      1       ---       4       ---      1
@@ -27,6 +29,7 @@
  *      8       ---       3       ---      3
  *      9       ---       4       ---      1
  */
+
 // First, by looking at both the trends of no. of spaces and stars, both of them have their turning point on line 5.
 // Noticably, line 5 is also the middle point which is Math.ceil([no.ofLines]/2) or [no.ofLines]/2 + 1.
 // It would be much more easier to find out the pattern as if we divide it into two patterns, i.e. i <= 5 and i>=6.
@@ -43,7 +46,7 @@
  *      7       ---               2                  ---                           3 (2, 3)
  *      8       ---               3                  ---                           5 (3, 4, 5)
  *      9       ---               4                  ---                           7 (4, 5, 6, 7)
-// As a result, I set the algorithm to 2*(i - 5) - 1.((i - 5) + 1 is also accpetable though.)
+// As a result, I set the algorithm to 2*(i - 5) - 1. ((i - 5) + 1 is also accpetable though.)
 
 // Then let us discuss the no. of stars.
 // The below graph could explain the algorithm:
@@ -55,8 +58,14 @@
  *      5       ---      +4      ---      9
  *      6       ---      +1      ---      7
  *      7       ---      -2      ---      5
+ *      8       ---      -5      ---      3
+ *      9       ---      -8      ---      1
  */
-// To be continued...
+// The change of relationship between the no. of lines and no. of stars from line 1 to 5 is +1.
+// The change of relationship between the no. of lines and no. of stars from line 6 to 9 is -3.
+// As a result, I set the algorithm to k <= i + (4 - 3*(i - 5)) in which 4 is the starting value of the line 5.
+// (4 - 3*(i - 5)) would eventually become negative and perform the action that no. of lines minus the so called "Relationship"
+// equals to no. of stars.
 
  public class printOutDiamondWith3LoopsSimpleVersion
 
