@@ -32,18 +32,19 @@
  *       8                3                 3                  6
  *       9                4                 1                  5
  */
-// The idea is simple, if we can find an equation allocating all no. of slots and another one allocating the no. of spaces.
+// The idea is simple, if we can find the no. of slots and the no. of spaces in each line.
 // The no. of stars could be easily arranged by filling the leftover slots.
+// By considering the no. of slots, line 1 - 5 and line 6 - 9 can be separated two separate groups(i.e. middleLine).
 // The equation of no. of slots for the first half part would be :
-// numberOfLines(i.e. i) + (Math.ceil(maxNumberOfLines/2)(i.e. the middle line) - 1)
-// where Math.ceil(maxNumberOflines/2) - 1 would be 4 at this point(when the maxNumberOfLines = 9).
+// numberOfLines(i.e. i) + (middleLine - 1)
+// where middleLine - 1 would be 4 at this point(when the maxNumberOfLines = 9).
 // The equation of no. of slots for the last half part would be:
-// Math.ceil(numberOfLines/2) (i.e. as a replacement of i) + (Math.ceil(numberOfLines/2) - 1) - (i - Math.ceil(numberOfLines/2))
+// middleLine(i.e. as a replacement of i) + (middleLine - 1)(i.e. same as the above) - (i - middleLine)
 // where i - Math.ceil(maxNumberOfLines/2) would be -1 when i = 6(i.e. when the numberOfLines = 6).
 
 // And for the no. of spaces:
-// The first half would be Math.ceil(maxNumberOfLines/2) - i.
-// The second half would be i - Math.ceil(maxNumberOfLines/2).
+// The first half would be middleLine - i.
+// The second half would be i - middleLine.
 // The equation of the two halves are exactly in a negative relationship(or symmetrical regarding their slopes).
 
 // And this is how I finished the "print out diamond in 3 for loops" classwork.
@@ -72,22 +73,25 @@ public class printOutDiamondWith3LoopsAdvancedVersion {
 	
 		double maxNumberOfLines = userInput;
 		// double type is used instead of integer type in order to prevent removal of remainder when a division performed.
-	
+		double middleLine = Math.ceil(maxNumberOfLines/2);
+		
 		// Print out the diamond.
 		for (int i = 1; i <= maxNumberOfLines; i++) { 
   		// Determine the number of lines, which is also the maximum number of slots (the line in the middle).
-			if (i <= Math.ceil(numberOfLines/2)) { // Seperate the whole diamond into two parts(as mentioned above).
-				for (int j = 1; j <= i + ((Math.ceil(maxNumberOfLines/2) - 1)); j++) {
-					if (j <= Math.ceil(maxNumberOfLines/2) - i) {
+			if (i <= middleLine) { // Seperate the whole diamond into two parts(as mentioned above).
+				for (int j = 1; j <= i + (middleLine - 1)); j++) {
+					// Determine the no. of slots in each line from line 1 to 5.
+					if (j <= middleLine - i) { // Determine the no. of spaces and stars.
 						System.out.print(" ");
 					} else {
 						System.out.print("*");
 					}
 				}
 			} else { // i > Math.ceil(numberOfLines/2)
-				for (int k = 1; k <= (Math.ceil(maxNumberOfLines/2) + (Math.ceil(maxNumberOfLines/2) - 1)) - (i - Math.ceil(maxNumberOfLines/2)); k++) {
+				for (int k = 1; k <= (middleLine + (middleLine - 1)) - (i - middleLine); k++) {
 					// For better understanding, I did not simplify the above condition, which of course could be more simple.
-					if (k <= i - Math.ceil(maxNumberOfLines/2)) {
+					// Determine the no. of slots in each line from line 6 to 9.
+					if (k <= i - middleLine) { // Determine the no. of spaces and stars.
 						System.out.print(" ");
 					} else {
 						System.out.print("*");
