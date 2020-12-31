@@ -138,8 +138,8 @@
       }
       ```
       
-**10. Double or float, which one of them has a bigger range?**
-   - ans: Double is more precise as it can represents more decimal points.
+**10. `Double` or `float`, which one of them has a bigger range?**
+   - ans: `Double` is more precise as it can represents more decimal points.
    
 **11. Does switch statement supports range?**
    - ans: No.
@@ -340,3 +340,78 @@
          - That becomes a traditions to many websites and documents as well.
       - Questionable guess:
          - underscore `_` is treated as a single string of non-white character while dash `-` is treated as two single words.
+         
+**30. What is `printf()`?**
+   - ans: **`printf()` and `format` after `System.out.` is similar to `print()` and `println()`, but with more control with the number outputed.**
+   - explanation: 
+      - `print()` and `println()` converted the arbitrary mixture of strings and numbers into some kind of string.
+      - This is how it works: `public [PrintStream] format(String [format], Object... [args]])`
+         - `format` = a format string specifying how the objects in the second parameter, `[args]` are to be formatted.
+         - contains plain text as well as `format specifiers`
+
+**30a. What is a `format specifiers`?**
+   - ans: special characters formatting the arguments of `object... [args]`(also called `varargs` - varying numbers of arguments).
+   - explanation: Begins with a percent sign(%) and end with a converter.
+      - converter = a character indicating the type of argument to be formatted
+      - for example:
+         - `%d` = specifies the single variable as a decimal integer.
+         - `%n` = a platform-independent newline character(appriopriate to the platform running the application).
+         - `.3` = three places after decimal point
+         - `8 = eight characters in width, with leading zeros as necessary(i.e. place zeros if not in eight chracters).
+         - `10.3` = ten characters in width, right justified, with three places after decimal point(i.e. place a space if not in ten characters).
+         - `+` = Include sign, whether positive or negative.
+         - `-` = left-justified.
+         - `td, te` = A date & time conversion.
+   
+**30b. How to convert a `double` into a `float`?(besides the range difference mentioned in Q10)**
+   - ans: end the `double` with `f`, such as `float [newVariableName] = [doubleValue]f`
+   - explanation: `float` is less precise than `double`, with only 32-bi precision IEEE 754 floating point.
+   
+**31. What is `Arrays.deepToString()`?**
+   - ans: returns string representation of `arr[]`
+   - explanation: `toString()` works for simple arrays instead of multidimensional arrays.
+      - This method is designed for converting multi-dimensional arrays to strings.
+      
+**32. How to assign an array size for primitive type?**
+   - ans: (for exmaple int)
+      - `int[] [arrayName] = new int[[arrraySize]]`
+      - `int[] [arrayName] = {...[values]}`
+      - `int[] [arrayName] = new int[]{...[values]}`
+      - **Remember all array starts from zero.**
+      
+**33. How to assign an array value afterward?**
+   - ans: `[arrayName][[no. of row]][[no. of column]] = [value]`
+
+**34. What does it means by `throw [exception]`?**
+   - ans: **Indication that this method might throw one of the listed type exception.**
+   - explanation: and thus similar to just ignore it.
+   
+**35. what is `bufferedwriter` class?**
+   - ans: **It writes text to character-output stream, buffering characters.**
+   - exxplanation:
+      - Constructor: `BufferedWriter(Writer out, int [size])` Creates a buffered character-output stream.
+         - If no size is given, it uses a default output stream.
+      - Method: 
+         - `write(int [arg])` = writes a single chracter that is specified by an integer argument.
+         - `write(String [arg], int [offset], int [length])` = writes String in the file according to its arguments.
+         - `newLine()` = breaks/separates line.
+         - `flush()` = flushes character from writer buffer.
+         - `close()` = flushes character from writer buffer and then close it.
+
+**36. What is a `Filewriter` class?**
+   - ans: Used for writing streams of characters.
+   - explanation: 
+      - Constructors:
+         - `FileWriter(File [fileName])` creates a File object.
+         - `Filewriter(File [fileName], boolean [append])` creates a `FileWriter` object given a `File` object with a boolean indicating whether or not to append the data writtern.
+         - `FileWriter(FileDescriptor [fileDescription])` createws a `FileWriter` object associated with the given file descriptior.
+         - `FileWriter(String [fileName])` creates a `FileWriter` object, given a file name.
+         - `Filewriter(String [fileName], boolean [append])` creates a FileWriter object 
+      - Methods:
+         - `write(int [character]) throws IOException` writes a single character.
+         - `write(char [character], int [offset], int [length])` writes a portion of an array of characters starting from offset and write a length of len.
+         - `write(String [string], int [offset], int [length])` write a portion of a String from offset and with a length of len.
+         
+**37. What is a `System.getenv()`?**
+   - ans: 
+      
