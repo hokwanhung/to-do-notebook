@@ -17,3 +17,13 @@ Diverse fields of knowledge related to CS learnt from universities.
          - If the number(n) is divisible by other integers(i), it is not a prime number.
          - `n % i == 0`, n is not a prime number.
       - If the (Divisor) > (Dividend)/2, there must be a remainder when testNumber modulus testTool.
+   2. printoutDiamondWith3LoopsSimpleVersion
+      - A classwork requires us to print out a diamond shape in 3 for loops.
+      - The initial version that I finished the task, with the Math.abs() method used as the task recommended.
+      - "Divide and conquer" method is used to seperate the diamond into two parts.
+      - The equations found is more based on listing out cases and finding the common factors.
+   3. printOutDiamondWith3LoopsAdvancedVersion
+      - An upgrade version of the classwork, though the max. no. of lines is inserted by the user.
+      - Better structures using multiple "if-else" statements and mathematical calculations.
+      - "Divide and conquer" method is also used as the above one.
+      - The program view the no. of spaces and stars as a whole first, and then print out both of them seperately.
