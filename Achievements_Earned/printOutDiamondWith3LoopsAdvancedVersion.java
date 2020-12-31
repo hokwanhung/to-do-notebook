@@ -15,9 +15,38 @@
  *    ***
  *     *
  */
+
 // Let divide the diagram into two parts, one is lines with increasing "*" and one is with decreasing "*".
-// The first equation we need to know is where is the line that seperates both of it
-// To be continued...
+// The first equation we need to know is the no. of the specific line that seperates both parts:
+// maxNumberOfLines/2 + 1(consider maxNumberOfLines as an int) or math.ceil(maxNumberOfLines/2)(consider maxNumberOfLines as a double).
+
+// The second equation would be about considering the no. of slots.
+/* no. of lines --- no. of spaces --- no. of stars --- total no. of slots (Using 9 lines as an example)
+ *       1                4                 1                  5
+ *       2                3                 3                  6
+ *       3                2                 5                  7
+ *       4                1                 7                  8
+ *       5                0                 9                  9
+ *       6                1                 7                  8
+ *       7                2                 5                  7
+ *       8                3                 3                  6
+ *       9                4                 1                  5
+ */
+// The idea is simple, if we can find an equation allocating all no. of slots and another one allocating the no. of spaces.
+// The no. of stars could be easily arranged by filling the leftover slots.
+// The equation of no. of slots for the first half part would be :
+// numberOfLines(i.e. i) + (Math.ceil(maxNumberOfLines/2)(i.e. the middle line) - 1)
+// where Math.ceil(maxNumberOflines/2) - 1 would be 4 at this point(when the maxNumberOfLines = 9).
+// The equation of no. of slots for the last half part would be:
+// Math.ceil(numberOfLines/2) (i.e. as a replacement of i) + (Math.ceil(numberOfLines/2) - 1) - (i - Math.ceil(numberOfLines/2))
+// where i - Math.ceil(maxNumberOfLines/2) would be -1 when i = 6(i.e. when the numberOfLines = 6).
+
+// And for the no. of spaces:
+// The first half would be Math.ceil(maxNumberOfLines/2) - i.
+// The second half would be i - Math.ceil(maxNumberOfLines/2).
+// The equation of the two halves are exactly in a negative relationship(or symmetrical regarding their slopes).
+
+// And this is how I finished the "print out diamond in 3 for loops" classwork.
 
 import java.util.Scanner;
 
@@ -38,25 +67,27 @@ public class printOutDiamondWith3LoopsAdvancedVersion {
 			if (userInput % 2 == 1 && userInput >= 3) {
 				isValidFlag = true; // maxNumberOfLines is an odd number and it's bigger than 3.
 			} 
-		} // If an even number is inserted or the number inserted is lower than 3, the user is requested to input another number.
+		} 
+		// If an even number is inserted or the number inserted is lower than 3, the user is requested to input another number.
 	
-		double numberOfLines = userInput;
+		double maxNumberOfLines = userInput;
 		// double type is used instead of integer type in order to prevent removal of remainder when a division performed.
 	
 		// Print out the diamond.
-		for (int i = 1; i <= numberOfLines; i++) { 
-    // Determine the number of lines, which is also the maximum number of slots (the line in the middle).
+		for (int i = 1; i <= maxNumberOfLines; i++) { 
+  		// Determine the number of lines, which is also the maximum number of slots (the line in the middle).
 			if (i <= Math.ceil(numberOfLines/2)) { // Seperate the whole diamond into two parts(as mentioned above).
-				for (int j = 1; j <= i + ((Math.ceil(numberOfLines/2) - 1)); j++) {
-					if (j <= Math.ceil(numberOfLines/2) - i) {
+				for (int j = 1; j <= i + ((Math.ceil(maxNumberOfLines/2) - 1)); j++) {
+					if (j <= Math.ceil(maxNumberOfLines/2) - i) {
 						System.out.print(" ");
 					} else {
 						System.out.print("*");
 					}
 				}
 			} else { // i > Math.ceil(numberOfLines/2)
-				for (int k = 1; k <= (Math.ceil(numberOfLines/2) + (Math.ceil(numberOfLines/2) - 1)) - (i - Math.ceil(numberOfLines/2)); k++) {
-					if (k <= i - Math.ceil(numberOfLines/2)) {
+				for (int k = 1; k <= (Math.ceil(maxNumberOfLines/2) + (Math.ceil(maxNumberOfLines/2) - 1)) - (i - Math.ceil(maxNumberOfLines/2)); k++) {
+					// For better understanding, I did not simplify the above condition, which of course could be more simple.
+					if (k <= i - Math.ceil(maxNumberOfLines/2)) {
 						System.out.print(" ");
 					} else {
 						System.out.print("*");
