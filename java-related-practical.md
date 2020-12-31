@@ -332,3 +332,11 @@
 
 **28. How does integer performs division?**
    - ans: **If an integer performs division, the remainder would be thrown away.**
+   
+## 2020.12.30
+**29. What is the difference between dash and underscore?**
+   - ans:
+      - dash `-` is originally preferred in search engine, especially Google from a long time ago.
+         - That becomes a traditions to many websites and documents as well.
+      - Questionable guess:
+         - underscore `_` is treated as a single string of non-white character while dash `-` is treated as two single words.
