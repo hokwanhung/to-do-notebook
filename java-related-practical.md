@@ -251,13 +251,14 @@
 **20. Introduce some simple math functions?**
    - ans:
       - `Math.random()`
-         - Generate a doulbe number equals to 0.0 and less than 1.0.
+         - Generate a `doulbe` number equals to 0.0 and less than 1.0.
       - `Math.round()`
-         - Rounds a double number to the nearest integer.
+         - Rounds a `double` number to the nearest integer.
       - `Math.floor()`
-         - Rounds a double number downward to the nearest integer (returns in double type).
+         - Rounds a `double` number downward to the nearest integer (returns in `double` type).
       - `Math.ceil()`
-         - Rounds a double number upward to the nearest integer (returns in double type).
+         - Rounds a `double` number upward to the nearest integer (returns in `double` type).
+         - **If a `int` is inserted, any calculation inside `Math.ceil()` would already be rounded down, resulting in no `Math.ceil()`.**
          
 **21. What about doing calculation in `return`?**
    - ans: simple calculation is acceptable, but it's better to assign it to a variable first for better clarification.
@@ -411,7 +412,28 @@
          - `write(int [character]) throws IOException` writes a single character.
          - `write(char [character], int [offset], int [length])` writes a portion of an array of characters starting from offset and write a length of len.
          - `write(String [string], int [offset], int [length])` write a portion of a String from offset and with a length of len.
-         
+
+##2021.01.01
 **37. What is a `System.getenv()`?**
-   - ans: 
+   - ans: Gets the value of the specified `environment variable`.
+   - explanation: `environment variable` = system-dependent external named value.
+      - Used when a global effect is desired, or when an external system interface requires an environment variable e.g. PATH.
+         
+**38. what is a `trim()`?**
+   - ans: a build-in function that eliminates leading and trailing spaces.
+   - explanation: Check the Unicode value of space character "\u0020" and returns the omitted string.
+   
+**39. What is a `nextLine()`?**
+   - ans: returns the line that was skipped (~Print out the line until a "\n" is met).
+   
+**40. What is a `.length` and `.length()`?**
+   - ans: `[arrayName].length` and `string.length()`
+   - explanation: 
+      - The first one is used to obtain the size of an array.
+      - The second one is used to obtain the number of characters presents in the string.
       
+**41. What is a `split()`?
+   - ans: It breaks a given string around matcches of the given regular expression.
+   - explanation: 
+       - `split(String [regex], int [limit])`
+       - To be continued...
