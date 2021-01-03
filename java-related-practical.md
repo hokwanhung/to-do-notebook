@@ -464,7 +464,12 @@
       -
 
 **43b. When do use `new BigInteger` and `BigInteger.valueOf()`?**
-   - ans:
+   - ans: 
+      - `new BigInteger`
+         - Use the canonical `String` representation of the `double` value passed in.
+      - `BigInteger.valueOf()`
+         - 
+   
 **44. How to take care of very big `int`(integers)?**
    - ans:
       - Either to use the `BigInteger` class
