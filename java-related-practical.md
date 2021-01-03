@@ -436,4 +436,38 @@
    - ans: It breaks a given string around matcches of the given regular expression.
    - explanation: 
        - `split(String [regex], int [limit])`
-       - To be continued...
+       - **To be continued...**
+       
+**42. What is `Integer.MAX_VALUE` and `Integer.MIN_VALUE`?**
+   - ans:
+      - `Integer.MAX_VALUE` = 2^31 - 1 = 2147483647
+      - `Integer.MIN_VALUE` = -2^31 = -2147483648
+
+**43. what is the value range of all primitive variable type?**
+   - ans: **Type - Size - Range**
+      - `byte` - `8 bits` - `-128 ... 127`
+      - `short` - `16 bits` - `-32,768 ... 32, 767`
+      - `int` - `32 bits` - `-2,147,483,648 ... 2,147,483,647`
+      - `long` - `64 bits` - `-9,223,372,036,854,775,808 ... 9,223,372,036,854,775,807`
+      - `float` - `32 bits` - `3.40282347 x 10^38, 1.40239846 x 10^-45`
+      - `double` - `64 bits` - `1.7976931348623157 x 10^308, 4.9406564584124654 x 10^-324`
+      
+**43. What is the `BigInteger` and `BigDecimal`class?**
+   - ans: Used for mathematical operation involving very big integer calculations that are outside the limit of all available primitive data type.
+   - explanation: The methods and compostors are actually similar to `Integer` data type.
+      - `BigInteger` takes care for integers while `BigDecimal` takes care for decimal digits.
+      
+**43a. How to use the `BigInteger` class?**
+   - ans:
+      - Initializing the variable: `BigInteger [variableName] = new BigInteger([value]);`
+      - Converting to `BigInteger`: `[varialbeName] = BigInteger.valueOf([value]);`
+      -
+
+**43b. When do use `new BigInteger` and `BigInteger.valueOf()`?**
+   - ans:
+**44. How to take care of very big `int`(integers)?**
+   - ans:
+      - Either to use the `BigInteger` class
+      - Or to create a class for yourself: [How to handle very large numbers in Java without using java.math.BigInteger](https://stackoverflow.com/questions/5318068/how-to-handle-very-large-numbers-in-java-without-using-java-math-biginteger/5318896)
+
+**45. What is `scope`?**
