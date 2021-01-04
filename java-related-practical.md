@@ -449,6 +449,7 @@
       - `short` - `16 bits` - `-32,768 ... 32, 767`
       - `int` - `32 bits` - `-2,147,483,648 ... 2,147,483,647`
       - `long` - `64 bits` - `-9,223,372,036,854,775,808 ... 9,223,372,036,854,775,807`
+         - The `long` data type is a 64-bit two's complement integer.
       - `float` - `32 bits` - `3.40282347 x 10^38, 1.40239846 x 10^-45`
       - `double` - `64 bits` - `1.7976931348623157 x 10^308, 4.9406564584124654 x 10^-324`
       
@@ -459,16 +460,37 @@
       
 **43a. How to use the `BigInteger` class?**
    - ans:
-      - Initializing the variable: `BigInteger [variableName] = new BigInteger([value]);`
-      - Converting to `BigInteger`: `[varialbeName] = BigInteger.valueOf([value]);`
-      -
+      - Initializing the variable: `BigInteger [variableName] = new BigInteger([stringValue]);`
+         - Some constants are defined in BigInteger class already, e.g. `.ONE`, `.ZERO` and `.TEN`
+      - Converting to `BigInteger`: `[varialbeName] = BigInteger.valueOf([intValue]);`
+      - Mathematical operations:
+         - Adding two variables: `BigInteger [variableName] = [firstVariableName].add([secondVariableName])`
+         - Other similar functions: `.subtract()`, `.multiply()`, `.divide()` and `.remainder()`
+      - Converting to other data type: 
+         - To `int`: `[BigIntegerVariableName].intValue()`
+         - To `long`: `[BigIntegerVariableName].longValue()`
+         - To `string`: `[BigIntegerVariableName].toString()`
+         - For `int` and `long`, the value should within its limits.
+      - Comparing `BigInteger`: `if ([firstVariableName].compareTo([secondVariableName] < 0))` = `if ([firstVariableName] < [secondVariableName])`
+         - `compareTo()` returns -1(less than), 0(Equal) and 1(greater than) according to values.
+      - Comparing `BigInteger`(equality): `if ([firstVariableName].equals([secondVariableName]))`
+      - More methods of `BigInteger` class: [BigInteger Class in Java](https://www.geeksforgeeks.org/biginteger-class-in-java/)
+         
 
 **43b. When do use `new BigInteger` and `BigInteger.valueOf()`?**
    - ans: 
       - `new BigInteger`
-         - Use the canonical `String` representation of the `double` value passed in.
+         - The `BigInteger` would represent the `value` as accurately as possible, resulting in a lot mor digits being stored.
+         - It is more correct than `valueOf()`, but also a lot less intuitive.
+         - `0.1` cannot be represented by `double` as a binary fraction of any finite length.
+         - Any value passed by may not exactly equal to `0.1`(the target value).
       - `BigInteger.valueOf()`
-         - 
+         - Use the [canonical `String` representation](https://docs.oracle.com/javase/7/docs/api/java/lang/Double.html#toString%28double%29) of the `double` value passed in to inistantiate the `BigInteger` object.
+         - The value of the `BigInteger` object would be exactly of `System.out.println([variableName])`
+   - explanation:
+      - Generally, if the result is the same, `valueOf()` should be preferred.
+         - It can do caching of common values and even change the caching behaviour without the caller having to be changed.
+         - `new` will always instantiate a new value, even if not necessary (best example: `new Boolean(true)` vs ``)
    
 **44. How to take care of very big `int`(integers)?**
    - ans:
@@ -476,3 +498,8 @@
       - Or to create a class for yourself: [How to handle very large numbers in Java without using java.math.BigInteger](https://stackoverflow.com/questions/5318068/how-to-handle-very-large-numbers-in-java-without-using-java-math-biginteger/5318896)
 
 **45. What is `scope`?**
+   - ans: **To be continued**
+
+**46. How to make an array size to be dynamic?**
+   - ans: 
+
