@@ -500,6 +500,45 @@
 **45. What is `scope`?**
    - ans: **To be continued**
 
+## 2020.01.05
 **46. How to make an array size to be dynamic?**
    - ans: 
+      - Either to allocate it first and readjust the size later,
+      ```
+      int[] oldItems = new int[10];
+      for (int i = 0; i < 10; i++) {
+          oldItems[i] = i + 10;
+      }
+      int[] newItems = new int[20];
+      System.arraycopy(oldItems, 0, newItems, 0, 10);
+      oldItems = newItems;
+      ```
+      - Or to use `ArrayList` to take care of the logic for growing array.
+         - Generally preferred solution.
 
+**46a. How to create and use an `ArrayList`?**
+   - ans:
+      - Declaring the array: `ArrayList<Integer> [arrayName] = nbew ArrayList<Integer>([sizeValue])`
+      - Appending new elements: `[arrayName].add([value], [object])`
+         - The `object` is used to add the element at a specific index, which the value in the original index would be index + 1.
+      - Printing the array: `System.out.println([arrayName])`
+      - Removing elements: `[arrayName].remove([index]/[value])`
+      - Printing one of the elements: `System.out.println([arrayName].get([index]))`
+      - Changing one of the elements: `[arrayName].set([index], [value])`
+      - Iteration on the array(alternative):
+      ```
+      for (String str : al) {
+         System.out.print(str + " ");
+      }
+      ```
+      
+**46b. How to convert from an `ArrayList` to an `array`?**
+   - ans:
+      - `Object[] [arrayName] = [arrayListName].toArray();`
+         - Typecasting is required before using as `Integer` Object.
+         ```
+         for (Integer obj : [arrayName]) {
+            
+         }
+         ```
+      - ``
