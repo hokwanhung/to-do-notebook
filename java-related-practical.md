@@ -537,8 +537,22 @@
       - `Object[] [arrayName] = [arrayListName].toArray();`
          - Typecasting is required before using as `Integer` Object.
          ```
-         for (Integer obj : [arrayName]) {
-            
+         for (Object obj : [arrayName]) {
+            // Lines of codes
          }
          ```
-      - ``
+         - A solution is to create an array into which elements of List need to be stored and pass it as an argument in `toArray()` method to store elements if it is big enough.
+      - `Integer[] [arrayName] = new Integer[[arrayListName].size()]` + `[arrayName] = [arrayList].toArray([arrayName])`
+         - If the new array(passed array) does not have enough space, a new array is created with same type and size of the given list.
+         - If the passed array has sufficient space, the array is first filled with list elemetns, then null values are filled.
+         - Generics = parameterized types, e.g. `Integer`, `String`(the exact opposite of the `primitive data type`).
+      - Manually converting `ArrayList` using `get()` method,
+      ```
+      Integer[] [arrayName] = new Integer[[arrayListName].size()];
+      for (int i = 0; i < [arrayListName].size(); i++) {
+         [arrayName][i] = [arrayNameList].get(i);
+      ```
+      - Using streams API of collections to convert to array of primitive int type.
+      ```
+      int[] [arrayName] = list.stream().mapToInt(i -> i).toArray();
+      ```
