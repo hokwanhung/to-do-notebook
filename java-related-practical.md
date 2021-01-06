@@ -556,3 +556,5 @@
       ```
       int[] [arrayName] = list.stream().mapToInt(i -> i).toArray();
       ```
+
+## 2021.01.06
