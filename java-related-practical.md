@@ -558,3 +558,126 @@
       ```
 
 ## 2021.01.06
+**47. How to do a factorial of something?**
+   - ans: 
+   ```
+   Recursive:
+   // Java program to find factorial of given number 
+   class Test 
+   { 
+       // method to find factorial of given number 
+       static int factorial(int n) 
+       { 
+           if (n == 0) 
+             return 1; 
+
+           return n*factorial(n-1); 
+       } 
+
+       // Driver method 
+       public static void main(String[] args)  
+       { 
+           int num = 5; 
+           System.out.println("Factorial of "+ num + " is " + factorial(5)); 
+       } 
+   } 
+   Iterative Solution:
+   class Test 
+   { 
+       // Method to find factorial of given number 
+       static int factorial(int n) 
+       { 
+           int res = 1, i; 
+           for (i=2; i<=n; i++) 
+               res *= i; 
+           return res; 
+       } 
+
+       // Driver method 
+       public static void main(String[] args)  
+       { 
+           int num = 5; 
+           System.out.println("Factorial of "+ num + " is " + factorial(5)); 
+       } 
+   } 
+   Using Ternary operator:
+   // Java program to find factorial 
+   // of given number 
+   class Factorial { 
+
+     int factorial(int n) 
+     { 
+
+       // single line to find factorial 
+       return (n == 1 || n == 0) ? 1 : n * factorial(n - 1); 
+
+     } 
+
+
+     // Driver Code 
+     public static void main(String args[])      
+     { 
+       Factorial obj = new Factorial(); 
+       int num = 5; 
+       System.out.println("Factorial of " + num +  
+                         " is " + obj.factorial(num)); 
+      } 
+   ```
+   - explanation: 
+      - `Recursive` = the process of defiming a problem (or the solution to a problem) in terms of (a simpler version of) itself.
+         - Do tasks that are too complex for an iterative approach.
+      - `Iteration` = the repetition of a process or utterance.
+
+**47a. What is a `ternary operator`?**
+   - ans: `variable(resultant value) = Expression1 ? Expression2(true) : Expression3(false)`
+   - explanation: The only conditional operator that takes three operands.
+      - Used in place of `if-else` conditions or even switch conditions using nested ternary operators.
+      - Useful in simplifying the `if-else` condition, and used a lot.
+
+**47b. What is `recursive AI`?**
+   - ans: Used in data structure algorithms like local search algorithms that can be used in AI.
+   - explanation: 
+      - BFS(Breadth-first search) = an algorithm for traversing or searching tree or graph data structures.
+      - DFS(Depth-first search) = an algorithm for traversing or searching tree or graph data structures.
+      - MEA(means-end analysis) = a problem-solving technique used commonly in artificial intelligence for limiting search in AI programs.
+      
+**48. Explain the Modular Arithmetics?**
+   - ans: Some already explaiend in `Road-to-a-Gold-Medal Q5`
+      - **Modulus arithmetics:(Some explained in Q5 already)**
+         - Properties of addition in modular arithmetic:
+         ```
+         If a+b=c, then a(modN)+b(modN)≡c(modN).
+         If a≡b (modN), then a+k≡b+k (modN) for any integer k.
+         If a≡b (modN) and c≡d (modN), then a+c≡b+d (modN).
+         If a≡b (modN), then −a≡−b (modN).
+         ```
+         - Properties of multiplication in modular arithmetic:
+         ```
+         If a⋅b=c, then a(modN)⋅b(modN)≡c(modN).
+         If a≡b (modN), then ka≡kb (modN) for any integer k.
+         If a≡b (modN) and c≡d (modN), then ac≡bd(modN).
+         ```
+         - Property of exponentiation in modular arithmetic:
+         ```
+         If a≡b (modN), then a^k≡b^k (modN) for any positive integer kk.
+         ```
+         - Property of division in modular arithmetic:
+         ```
+         If gcd(k,N)=1 and ka≡kb modN), then a≡b (modN).
+         If k(a - b) is a multiple of N and gcd(k, N) = 1, then N must divide a - b,or equivalently, a≡b (mod N).
+         ```
+         - Property iof multiplicative inverses:
+         ```
+         If a and N are integers such that gcd(a,N)=1, then there exists an integer x such that ax≡1 (modN).
+         x is called the multiplicative inverse of aa modulo N.
+         ```
+         
+**49. How to obtain the length of a multi-dimensional array?**
+   - ans: for example, a two-dimensional array:
+      - `first array size: [arrayName].length`
+      - `second array size: [arrayName][[indexOne]].length`
+         - Get the length of the array in that specific index(especially useful when the array length of every row is not the same).
+      - `third array size: [arrayName][[indexOne]][indexTwo].length`
+
+**50. What is `int64`?**
+   - ans: a data type in `Matlab`(needs more explanations).
