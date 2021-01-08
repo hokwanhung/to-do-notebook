@@ -681,3 +681,38 @@
 
 **50. What is `int64`?**
    - ans: a data type in `Matlab`(needs more explanations).
+
+## 2020.01.08
+**51. What is the `gcd`?**
+   - ans:
+      - Brute Force
+      ```
+       int gcdByBruteForce(int n1, int n2) {
+       int gcd = 1;
+       for (int i = 1; i <= n1 && i <= n2; i++) {
+           if (n1 % i == 0 && n2 % i == 0) {
+               gcd = i;
+           }
+       }
+       return gcd;
+      }
+      ```
+      - Euclid's Algorithm: 
+         - If the smaller number is subtracted from the larger number, the GCD doesn't change - therefore, if we keep on subtracting the number finally end up with their GCD.
+         - When the smaller number exactly divides the larger number, the smaller number is the GCD of the two given numbers.
+      ```
+      int gcdByEuclidsAlgorithm(int n1, int n2) {
+         if (n2 == 0) {
+           return n1;
+         }
+         return gcdByEuclidsAlgorithm(n2, n1 % n2);
+      }
+      ```
+      - Stein's Algorithm or Binary GCD Algorithm:
+      ```
+      To be continued
+      ```
+      
+**52. How to use a `Scanner` class?**
+   - ans: 
+   - explanation: 
