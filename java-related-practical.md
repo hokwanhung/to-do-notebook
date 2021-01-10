@@ -827,7 +827,7 @@
          - [Fast I/O in Java in Competitive Programming](https://www.geeksforgeeks.org/fast-io-in-java-in-competitive-programming/)
 
 **53a. What is a `StringTokenizer` class?**
-   - ans: Allows an application to break a string into tokens.
+   - ans: Allows an application to break a string into tokens(with regards of whitespace).
       - Do not distinguish among identifiers, numbers and quoted strings, nor do they recognize and skip comments.
       - Its uses is discouraged in new code.
          - It is recommended to use the `split` method of `String` or the `java.util.regex package` instead.
@@ -851,6 +851,55 @@
 **53c. What is the use of `printStackTrace()`?**
    - ans: Prints this throwable and its backtrace to the standard error stream that is the value of the field `System.err`.
 
-**54. How to detect the whitespaces in `string`?**
+**54. How to detect the whitespaces in a `string`?**
+   - ans:
+      - `[stringName].contains("[value]")` method
+         - Searches the sequence of characters in the given `string`.
+         - Returns `true` if sequence of char values are found in this `string` otherwise returns `false`.
+         - Implies that the specified line must contain, somewhere within it, the specified `string`.
+      - `isWhitespace` method
+         - Retrusn `true` if the passed character is really a white space.
+      - `[stringName].matches("[value]")` method
+         - Returns `true` if, and only if, this `string` matches the given regular expression.
+         - (.*) means if it is linked to another words, used either before or above the target `substring`.
+         - Implies the specified line must match the specified `string`, which includes wildcards.
+      - `regionMatches()` method
+         - To be continued...
+
+**54a. What is the `Escape Sequence`?**
+   - ans:
+      - `\t`: Insert a tab in the text at this point.
+      - `\b`: Insert a backspace in the text at this point.
+      - `\n`: Insert a newline in the text at this point.
+      - `\r`: Insert a carriage return in the text at this point.
+      - `\f`: Insert a formfeed in the text at this point.
+      - `\'`: Insert a single quote character in the text at this point.
+      - `\"`: Insert a double quote character in the text at this point.
+      - `\\`: Insert a backslash character in the text at this point.
+      
+**54b. List out all the `isXyz()`?**
+   - ans:
+      - `isDigit()`: Determines if the specified character is a digit.
+      - `isLetter()`: Determines if the specified character is a letter.
+      - `Character.isWhitespace()`: Determines if the specified character is white space according to `Java`.
+      - `isSpaceChar()`: Determines if the specified character is a Unicode space character.
+
+**55. How to convert a `char` to a `String`?**
+   - ans: `Character.toString([charName])` or `String.valueOf([charName])`
+   
+**56. What is a `Pattern` class?**
+   - ans: defines a pattern to be used in a search.
+   - explanation:
+   
+**57. How to add a `string` value to an occupied-`string` variable?**
+   - ans:
+      - Using the "+" operator:
+         - `String [newStringName] = [stringNameOne] + [stringNameTwo];`
+      - Using the `concat()` method: Accepts a `String` value, adds it to the current `String` and returns the concatenated value.
+         - `String [newStringName] = [stringNameOne].concat([stringNameTwo])`
+      - Using `StringBuffer` and `StringBuilder` class: Used as alternative to `String` when modification needed(similar to `string` except being mutable).
+         - `StringBuilder [stringBuilderName] = new StringBuilder([stringNameOne])` + `[stringBuildername].append([stringNameTwo])`
+         
+**57a. What is the `StringBuilder` class?**
    - ans:
    - explanation:
