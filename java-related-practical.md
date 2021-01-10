@@ -814,6 +814,7 @@
                   str = br.readLine();
                } catch (IOException e) {
                   e.printStackTrace();
+                  // Better referencing for the line that gives out errors.
                }
                return str;
             }
@@ -849,3 +850,7 @@
 
 **53c. What is the use of `printStackTrace()`?**
    - ans: Prints this throwable and its backtrace to the standard error stream that is the value of the field `System.err`.
+
+**54. How to detect the whitespaces in `string`?**
+   - ans:
+   - explanation:
