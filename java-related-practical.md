@@ -714,5 +714,68 @@
       ```
       
 **52. How to use a `Scanner` class?**
-   - ans: 
+   - ans: Used for obtaining the input of the primitive types like `int`, `double`, etc. and `string`.
+      - The easiest way to read input, though not very efficient if you want an input method for scenarios where time is a constraint.
    - explanation: 
+      - The predefined object `System.in` is passed, which represents the standard input stream.
+         - An object of class `File` is passed if we want to read input from a file.
+      - To read numerical values of a certain data type `Xyz`, the function to use is `nextXyz()`.
+         - For example, to read a value of type `short`, we can use `nextShort()`.
+      - To read `string`, we use `nextLine()`.
+      - To read a single character, we use `next().charAt(0)`.
+         - `next()` function returns the next token/word in the input as a string.
+         - `charAt(0)` function returns the first character in that `string`.
+      - To check if the next value we read is of a certain type or if the input has ended(EOF marker encountered).
+         - Check if the scanner's input is of the type we want with the help of `hasNextXyz()` functions where `Xyz` is the type we are interested in.
+         - To check for a string, we use `haxNextLine()`.
+         - To check for a single character, we use `hasNext.charAt(0)`.
+
+**52a. What is a `token`?**
+   - ans:
+      - Keywords: pre-defined or reserved words used to perform a specific function.
+      - Identifiers: used as the general terminology for naming of variables, functions and arrays(user-defined).
+      - Constants/Literals: similar to normal variables, but cannot be modified by the program once they are defined(fixed values).
+      - Special Symbols: symbols used as having some special meaning.
+         - Brackets`[]`: used as array element reference, indicating single and multi-dimensional subscripts.
+         - Parentheses`()`: used to indicate function valls and function parameters.
+         - Braces`{}`: marks the start and end of a block of code containing more than one executable statement.
+         - Comma`,`: used to separate more than one statements like for separating parameters in function calls.
+         - Semi-colon`;`: an operator that essentially invokes something called an initialization list.
+         - Asterick`*`: used to create pointer variable.
+         - Assignment operator`=`: used to assign values.
+      - Operators:
+         - Arithmetic Operators
+         - Unary Operators
+         - Assignment Operator
+         - Relational Operators
+         - Logical Operators
+         - Ternary Operator
+         - Bitwise Operators
+         - Shift Operators
+         - Instance of operator
+         - Precedence and Associativity
+  
+## 2020.01.10
+**53. How to use faster `I/O` in Competitive Programming?**
+   - ans:
+      - `Scanner` class
+         - Easy, less typing, but very slow(`Time Limit Exceeds` are always found in `Scanner`).
+         - Used built-in `nextInt()`, `nextLong()`, `nextDouble()` methods to read the desired object after initiating `scanner` object with input stream.
+      - `BufferedReader` class
+         - Fast, but requires lots of typing.
+         - `Java.io.BufferedReader` class reads text from a chracter-input stream, buffering characters so as to provide for the efficient reading of characters, arrays and lines.
+         - The value would have to be parsed every time for desired type.
+         - Reading multiple words from single line adds to its complexity because of the use of `Stringtokenizer`.
+         - Gets accepted with a running time of approx 0.89s.
+      - Userdefined `FastReader` class
+         - Uses the time advantage of `BufferedReader` and `StringTokenizer` and the advantage of user defined methods for less typing and therefore a faster input altogether.
+         - Gets accepted with a time of 1.23s.
+         - Easy to remember and is fast enough to meet the needs of most of the question in competitive coding.
+         ```
+         
+         ```
+      - `Reader` class
+         - The fastest way but requires very cumbersome methods in its implementation. 
+         - Uses `intputDataStream` to read through the stream of data and uses `read()` method and `nextInt()` methods for taking inputs.
+         - Gets accepted with a surprising time of just 0.28s.
+         - [Fast I/O in Java in Competitive Programming](https://www.geeksforgeeks.org/fast-io-in-java-in-competitive-programming/)
