@@ -772,10 +772,80 @@
          - Gets accepted with a time of 1.23s.
          - Easy to remember and is fast enough to meet the needs of most of the question in competitive coding.
          ```
-         
+         static class FastReader {
+            BufferedReader br;
+            StringTokenizer st;
+
+            public FastReader() {
+               br = new BufferedReader(new InputStreamReader(System.in));
+               // Initialize a BufferedReader with InputStreamReader.
+            }
+
+            String next() {
+               while (st == null || !st.hasMoreElements()) {
+                  // When StringTokenizer has no meaning in it, assign it to read a line of the BufferedReader.
+                  try {
+                     st = new StringTokenizer(br.readLine());
+                  } catch (IOException e) {
+                     e.printStackTrace();
+                  }
+               }
+               return st.nextToken();
+               // When the StringTokenizer reads a line, it return the next token of the StringTokenizer(the line).
+            }
+
+            // Parse the string returned by the StringTokenizer and turn it into other data types.
+            int nextInt() {
+               return Integer.parseInt(next());
+            }
+
+            long nextLong() {
+               return Long.parseLong(next());
+            }
+
+            double nextDouble() {
+               return Double.parseDouble(next());
+            }
+
+            // Directly read a line without declaring a StringTokenizer to "chop down" the string.
+            String nextLine() {
+               String str = ""; // The variable is initially assigned to nothing(but not "null".)
+               try {
+                  str = br.readLine();
+               } catch (IOException e) {
+                  e.printStackTrace();
+               }
+               return str;
+            }
+         }
          ```
       - `Reader` class
          - The fastest way but requires very cumbersome methods in its implementation. 
          - Uses `intputDataStream` to read through the stream of data and uses `read()` method and `nextInt()` methods for taking inputs.
          - Gets accepted with a surprising time of just 0.28s.
          - [Fast I/O in Java in Competitive Programming](https://www.geeksforgeeks.org/fast-io-in-java-in-competitive-programming/)
+
+**53a. What is a `StringTokenizer` class?**
+   - ans: Allows an application to break a string into tokens.
+      - Do not distinguish among identifiers, numbers and quoted strings, nor do they recognize and skip comments.
+      - Its uses is discouraged in new code.
+         - It is recommended to use the `split` method of `String` or the `java.util.regex package` instead.
+   - explanation:
+      - `countTokens()`: Calculates the no of the times that this tokenizer's `nextToken` method can be called before it generates an exception.
+      - `hasMoreElements()`: Returns the same value as the `hasMoreTokens` method.
+      - `hasMoreToekns`: Tests if there are more tokens available from this tokenizer's `string`.
+      - `nextElement()`: Returns the same value as the `nextToken` method, except its declared return value is `Object` rather than `string`.
+      - `nextToken()`: Returns the next token from this string tokenizer.
+
+**53b. What is a `BufferedReader` class?**
+   - ans: 
+      - Reads text from a character-input stream, buffering characters so as to provide for the efficient reading of characters, arrays, and lines.
+      - a `BufferedReader` is advised to be wrapped around any Reader whose `read()` operations may be costly, such as `FileReaders` and `InputStreamReaders`.
+   - explanation:
+      - `close()`: Closes the stream and releases any systemt resources associated with it.
+      - `read()`: Reads a single character.
+      - `readLine()`: Reads a line of text.
+      - `skip([index])`: Skips characters.
+
+**53c. What is the use of `printStackTrace()`?**
+   - ans: Prints this throwable and its backtrace to the standard error stream that is the value of the field `System.err`.
