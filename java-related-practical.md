@@ -948,3 +948,92 @@
 
 **58. What is `compile errors`?**
    - ans: `Compiler errors` are due to inaccuracies in code, where the compiler throws an error to alert you to something which will not compile, and therefore cannot be run.
+
+**58a. How to detect multiple lines in one scanner?**
+   - ans:
+   ```
+   Scanner:
+   public static void main(String args[]) {
+      [Initialize a scanner]
+      while([scannerName].hasNext()) { // Detect next token(if the codes inside has get the whole line, then getting the next token would not matter as it must get the next line then.)
+         [get Inputs + codes]
+   }
+   
+   BufferedReader:
+   BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+   String input = "";
+   String line;
+   while((line = br.readLine()) != null){
+       if(line.isEmpty()){
+           break; // if an input is empty, break
+       }
+       input += line + "\n";
+   }
+   br.close();
+   System.out.println(input);
+   
+   BufferedReader:
+   BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+   String line;
+   while ((line = br.readLine()) != null)
+       for (String numStr: line.split("\\s"))
+           sum += Integer.parseInt(numStr);
+   
+   BufferedReader:
+   BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
+   String line;
+   while ((line = stdin.readLine()) != null && line.length()!= 0) {
+       String[] input = line.split(" ");
+       if (input.length == 2) {
+           System.out.println(calculateAnswer(input[0], input[1]));
+       }
+   }
+   
+   FastReader:
+   boolean hasNext() {
+       if (st != null && st.hasMoreTokens()) {
+           return true;
+       }
+       String tmp;
+       try {
+           br.mark(1000);
+           tmp = br.readLine();
+           if (tmp == null) {
+               return false;
+           }
+           br.reset();
+       } catch (IOException e) {
+           return false;
+       }
+       return true;
+   }
+   ```
+   - explanation:
+      - The problem is `BufferedReader` does not have a method called `hasNext()`, which checks if there is a token and returns `true` and `false`.
+      
+**58b. What is `mark()` and `reset()`?**
+   - ans:
+      - `[readerName].mark([readAheadLimitIntegerValue])`: used to mark the stream as the checkpoint from where the stream read will start, once `reset()` is called.
+         - The method is not supported by all subclasses of `Reader` class.
+      - `[readerName].reset()`: an in-built method that resets variables maintaining the sum to zero.
+         - When the object of the class is created its initial value is zero.
+         
+**59. What is `format()`?**
+   - ans: Returns a formatted `string` using the given `locale`, specified `format string` and `arguments`
+   - explanation: `String [stringName] = String.format("[localeString]%[localeString][formatting]", [targetString])`
+      - `%a`: Accpets `floating point`(excepts `BigDecimal`) and returns `Hex` output of floating point number.
+      - `%b`: Accepts any type and returns `true` if non-null, `false` if null.
+      - `%c`: Accepts `character`and returns `Unicode character`.
+      - `%d`: Accepts `integer(incl, byte, short, int, long, bigint)` and returns `decimal integer`.
+      - `%e`: Accepts `floating point` and returns `decimal number` in `scientific notation`.
+      - `%f`: Accepts `floating point` and returns `decimal number`.
+      - `%g`: Accepts `floating point` and returns `decimal number`, possibly in `scientific notation` depending on the precision and value.
+      - `%h`: Accepts any type and returns `Hex String` of value from `hashCode()` method.
+      - `%n`: Accepts none and return platform-specific line separator.
+      - `%o`: Accepts `integer(incl, byte, short, int, long, bigint)` and returns `octal number`.
+      - `%s`: Accepts any type and return `String` value.
+      - `%t`: Accepts `Date/Time(incl. long, Calendar, Date and TemporalAccessor)`, but requires more formatting flags to convert the `Date/Time`(`%t` is only the prefix).
+      - `%x`: Accepts `integer(incl, byte, short, int, long, bigint)` and returns `Hex string`.
+      
+**60. What is `printf()`?**
+   - ans: To be continued...
