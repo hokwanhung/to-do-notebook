@@ -887,9 +887,15 @@
 **55. How to convert a `char` to a `String`?**
    - ans: `Character.toString([charName])` or `String.valueOf([charName])`
    
-**56. What is a `Pattern` class?**
-   - ans: defines a pattern to be used in a search.
+**56. What is `Regular Expression` in java?**
+   - ans: A sequence of characters that forms a search pattern(`java.util.regex` package).
    - explanation:
+      - When searching for data in a text, the search pattern can be used to describe what are searching for.
+      - Can be a single character, or a more complicated pattern.
+      - Can be used to perform all types of **text search** and **text replace** operations.
+      - `Pattern` Class: Defines a pattern (to be used in a search).
+      - `Matcher` Class: Used to search for the pattern.
+      - `PatternSyntaxException` Class: Indicates syntax error in a regular expression pattern.
    
 **57. How to add a `string` value to an occupied-`string` variable?**
    - ans:
@@ -901,5 +907,14 @@
          - `StringBuilder [stringBuilderName] = new StringBuilder([stringNameOne])` + `[stringBuildername].append([stringNameTwo])`
          
 **57a. What is the `StringBuilder` class?**
-   - ans:
+   - ans: Represents a mutable sequence of characters.
+      - The `StringBuilder` class provides no guarantee of synchronization.
+         - `StringBuilder` is designed for use as a drop-in replacement for `StringBuffer` in places where the `StringBuffer` was being used by a single thread（as is in generally the case）.
+      - `StringBuilder` is more preferred to `StringBuffer` as it will be faster under most implementations.
    - explanation:
+      - Constructors:
+         - `StringBuilder [stringName] = new StringBuilder()`: Constructs a string builder with no characters in it and an initial capacity of 16 characters.
+         - `StringBuilder([capacityValue])`: Constructs a string builder with no characters in it and an initial capacity(in `int`) specified by the capacity argument.
+         - `StringBuilder([sequenceValue])`: Constructs a string builder that contains the same characters as the specified `CharSequence`.
+         - `StringBuilder([stringName])`: Constructs a string builder initialized to the contents of the specified string.
+      - [Methods](https://www.geeksforgeeks.org/stringbuilder-class-in-java-with-examples/)
