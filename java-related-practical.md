@@ -924,8 +924,6 @@
          - `n{x, y}`: Matches any string that contains a sequence of `X` to `Y` `n`'s.
          - `n{x,}`: Matches any string that contains a sequence of at least `X` `n`'s.
          
-   
-   
 **57. How to add a `string` value to an occupied-`string` variable?**
    - ans:
       - Using the "+" operator:
@@ -947,3 +945,6 @@
          - `StringBuilder([sequenceValue])`: Constructs a string builder that contains the same characters as the specified `CharSequence`.
          - `StringBuilder([stringName])`: Constructs a string builder initialized to the contents of the specified string.
       - [Methods](https://www.geeksforgeeks.org/stringbuilder-class-in-java-with-examples/)
+
+**58. What is `compile errors`?**
+   - ans: `Compiler errors` are due to inaccuracies in code, where the compiler throws an error to alert you to something which will not compile, and therefore cannot be run.
