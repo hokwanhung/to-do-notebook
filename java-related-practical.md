@@ -1034,6 +1034,3 @@
       - `%s`: Accepts any type and return `String` value.
       - `%t`: Accepts `Date/Time(incl. long, Calendar, Date and TemporalAccessor)`, but requires more formatting flags to convert the `Date/Time`(`%t` is only the prefix).
       - `%x`: Accepts `integer(incl, byte, short, int, long, bigint)` and returns `Hex string`.
-      
-**60. What is `printf()`?**
-   - ans: To be continued...
