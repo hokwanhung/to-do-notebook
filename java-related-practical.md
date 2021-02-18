@@ -1034,3 +1034,11 @@
       - `%s`: Accepts any type and return `String` value.
       - `%t`: Accepts `Date/Time(incl. long, Calendar, Date and TemporalAccessor)`, but requires more formatting flags to convert the `Date/Time`(`%t` is only the prefix).
       - `%x`: Accepts `integer(incl, byte, short, int, long, bigint)` and returns `Hex string`.
+
+##2021.02.18
+**60. How to get a String with whitespace wtihin?**
+   - ans:
+      - use `nextLine()` instead of `next()`
+      - use `new Scanner(System.in).useDelimiter("\n")` with `next()`
+         - it acts like `nextLine()` with `next()`
+         - but `nextLine()` seems to have no change.
