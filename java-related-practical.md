@@ -1042,3 +1042,7 @@
       - use `new Scanner(System.in).useDelimiter("\n")` with `next()`
          - it acts like `nextLine()` with `next()`
          - but `nextLine()` seems to have no change.
+
+**61. What is `for-each` loop?**
+   - ans: `for([dataType] [item]:[array])`
+   - explanation: Similar to `for [variable] in [arrayName]` in Python.
