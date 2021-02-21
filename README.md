@@ -27,3 +27,9 @@ Diverse fields of knowledge related to CS learnt from universities.
       - Better structures using multiple "if-else" statements and mathematical calculations.
       - "Divide and conquer" method is also used as the above one.
       - The program view the no. of spaces and stars as a whole first, and then print out both of them seperately.
+   4. Farmer-Wolf-Goat-and-Cabbage-Problem (de-valued)
+      - A modified version of our school's example.
+      - By examinating the representation of a state (including start state and goal state), as well as safe state(excluding both start state and goal state):
+         - Whenever the side is, as long as the goat is with the man, the condition is safe.
+         - Whenever the side is, as long as the goat is with neither wolf nor cabbage, the condition is safe.
+      - Then listing out all operators, the problem becomes a far easy question to deal with.
