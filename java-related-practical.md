@@ -1054,3 +1054,8 @@
 
 **63. How to clear a Scanner?**
    - ans: The easiest way would be to create the scanner again.
+
+**64. How to catch multiple exception?**
+   - ans: 
+      - use `|` between exception in one `catch` statement.
+      - use multiple `catch` statement (before the newest version of Java).
