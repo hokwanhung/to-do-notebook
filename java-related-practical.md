@@ -1046,3 +1046,11 @@
 **61. What is `for-each` loop?**
    - ans: `for([dataType] [item]:[array])`
    - explanation: Similar to `for [variable] in [arrayName]` in Python.
+
+##2021.03.09
+**62. About Scanner**
+   - ans: Never use `next()` or `nextInt()` together with `nextLIne()`
+   - explanation: The first two method would not read past the end of line character.
+
+**63. How to clear a Scanner?**
+   - ans: The easiest way would be to create the scanner again.
