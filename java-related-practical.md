@@ -1059,3 +1059,11 @@
    - ans: 
       - use `|` between exception in one `catch` statement.
       - use multiple `catch` statement (before the newest version of Java).
+
+**65. What would happen when division by zero?**
+   - ans: Different variables type have different responses to it.
+   - explanation:
+      - `int` results in `ArithmeticException`
+      - `float` points types results in below:
+         -  divide floating-point zero values by zero results in `NaN`(not a number).
+         -  divide some non-zero values by zero results in `POSITIVE_INFINITY` or `NEGATIVE_INFINITY`.
