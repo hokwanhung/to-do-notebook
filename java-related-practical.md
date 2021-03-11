@@ -1067,3 +1067,8 @@
       - `float` points types results in below:
          -  divide floating-point zero values by zero results in `NaN`(not a number).
          -  divide some non-zero values by zero results in `POSITIVE_INFINITY` or `NEGATIVE_INFINITY`.
+
+**65a. How to detect those division by zero results?**
+   - ans: 
+      - `Nan` requires `isNaN([doubleVariableName])`.
+      - `INFINITY` requires `[doubleVariableName] == INFINITY`。
