@@ -63,3 +63,9 @@
    But if you add print(element) right after element = 5, you can get a bunch of 5.
    That means the assignment is towards the variable element and it is being replaced in every for loop happened.
    ```
+
+**12. How to print on the same line in Python?**
+   - ans: `print([Text], end=' ')`
+   - explanation:
+      - Every time `print` is called, a new separated line would automatically be drawn out.
+      - As a result, `end=' '` is used to only separate every `print` with one spacing.
