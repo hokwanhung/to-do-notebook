@@ -69,3 +69,8 @@
    - explanation:
       - Every time `print` is called, a new separated line would automatically be drawn out.
       - As a result, `end=' '` is used to only separate every `print` with one spacing.
+
+##2021.03.14
+**13. About the properties of `if...in...` statement with multi-dimensional array**
+   - ans: the statement can only detect one layer of the array
+   - explanation: It would only detect every inner array as a whole.
