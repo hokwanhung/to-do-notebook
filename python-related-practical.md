@@ -74,3 +74,13 @@
 **13. About the properties of `if...in...` statement with multi-dimensional array**
    - ans: the statement can only detect one layer of the array
    - explanation: It would only detect every inner array as a whole.
+
+**14. How to copy a list without linking both contents?**
+   - ans: Use `[newArray] = [oldArray].copy()` function instead of `[newArray] = [oldArray]`.
+   - explanation: `.copy` function returns a shallow copy of the list.
+
+**15. How to turn a `list` into a `tuple`?**
+   - ans:
+      - Using `tuple([listName])` (Typecasting method)
+      - Using `tuple(i for i in [listName])` (A small variation to the first one, but reasons are unknown)
+      - Using `(*list, )`(Unpacks the list inside a tuple literal, Fastest approach but with worse readability)
