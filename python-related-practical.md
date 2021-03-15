@@ -100,3 +100,10 @@
       - `assert [condition]`: To test the `[condition]`, and immediately trigger an error if the condition is false.
       - `if not [condition]: raise AssertionError()`
       - Remember not to use parenthesis `()`, as it is a statement.
+
+**18. How to count if all values in a `list` is the same or not?**
+   - ans:
+      - The simpliest method: `[listName].count([specificValues] == len([listName]))`
+      - The `numpy` method: `np.equal([arrayOne], [arrayTwo].all())`
+   - explanation:
+   - 
