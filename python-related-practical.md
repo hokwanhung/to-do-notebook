@@ -84,3 +84,10 @@
       - Using `tuple([listName])` (Typecasting method)
       - Using `tuple(i for i in [listName])` (A small variation to the first one, but reasons are unknown)
       - Using `(*list, )`(Unpacks the list inside a tuple literal, Fastest approach but with worse readability)
+
+##2021.03.15
+**16. How to copy a multi-dimension array?**
+   - ans: `[newArray] = copy.deepcopy([oldArray])`
+   - explanation: 
+      - Use normal methods like `[newArray] = [oldArray].copy()` would just equal to `=`.
+         - Which the modification of the new array would also affects the original array.
