@@ -14,7 +14,9 @@
       - second `[]`: the inside array (row)
      
 **3. How to replace a specific value in a list**
-   - ans: the easiest way is by using a `for` loop.
+   - ans: 
+      - the easiest way is by using a `for` loop.
+      - `[String].replace([oldValue], [newValue], [countLimit])`: returns a copy of the string where all occurrences of a substring is replaced with another substring.
 
 **4. How to accept multiple inputs in just one line**
    - ans: by using `[String].split([separator], [maxSplit])` function
