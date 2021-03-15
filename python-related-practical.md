@@ -93,3 +93,10 @@
    - explanation: 
       - Use normal methods like `[newArray] = [oldArray].copy()` would just equal to `=`.
          - Which the modification of the new array would also affects the original array.
+
+**17. What is the `assert()` statement?**
+   - ans: `assert [condition], [messageDisplay]`helps detect problems early in the program.
+   - explanation:
+      - `assert [condition]`: To test the `[condition]`, and immediately trigger an error if the condition is false.
+      - `if not [condition]: raise AssertionError()`
+      - Remember not to use parenthesis `()`, as it is a statement.
