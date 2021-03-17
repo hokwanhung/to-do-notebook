@@ -1072,3 +1072,18 @@
    - ans: 
       - `Nan` requires `isNaN([doubleVariableName])`.
       - `INFINITY` requires `[doubleVariableName] == INFINITY`。
+
+## 2021.03.17
+**66. How to get the current timestamp?**
+   - ans: 
+   ```
+   import java.util.Date;
+   
+   Date d = new Date();
+   ```
+
+**67. 
+
+**68. How to get a countdown?**
+   - ans:
+   - explanation:
