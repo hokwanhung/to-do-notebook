@@ -1073,16 +1073,53 @@
       - `Nan` requires `isNaN([doubleVariableName])`.
       - `INFINITY` requires `[doubleVariableName] == INFINITY`。
 
-## 2021.03.17
+## 2021.03.21
 **66. How to get the current timestamp?**
    - ans: 
+      - Getting the date/time as a single numeric value: `System.currentTimeMillis()`
+         - Expressed as the number of millisseconds after the UNIX epoch.
+      - Getting the date/time that can access to different components: 
+         - `new Date()`: `Date` object initialized with the current date/time (mostly flawed and depreciated)
+         - `Calendar.getInstance()`: `Calendar` object initialized with the current date/time, using default `Locale` and `TimeZone`
+         - `new org.joda.time.DateTime()`: `Joda-time` obect initialized with the current date/time, using the defualt time zone and chronology. ("obsolete" - no longer in used, replaced by `java.time` package)
+         - `java.time.LocalDateTime.now()` and `java.time.ZonedDateTime.now()` returns the current date/time (without a time-zone)
    ```
    import java.util.Date;
    
    Date d = new Date();
    ```
 
-**67. 
+**67. How to open a `JDialog` with a click on the button?**
+   - ans:
+      - Without opening another class:
+         - Just construct the `JDialog` in the `design` tab, relevant to the `Other components` group.
+         - call the `Jdialog` by simply just using `[jDialogName].setVisible(true);`
+      - Opening a new class:
+         - Contruct the `JDialog` like this:
+         ```
+         public class OtherDialog extends JDialog {
+            // ...
+            public OtherDialog(){
+               // build dialog
+            } 
+         }
+         ```
+         - Open it in the `JFrame-Button-Actionhandler`:
+         ```
+         protected void btnOpenotherdialogActionPerformed(ActionEvent e) {
+            try {
+                OtherDialog dialog = new OtherDialog();
+                dialog.setModalityType(ModalityType.APPLICATION_MODAL);
+                dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+                dialog.setVisible(true);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+         }
+         ```
+
+**67a. How to returna a value from a `JDialog` box to the parent `JFrame`?**
+   - ans: By adding a custom method `getValue()` to the custom `JDialog`.
 
 **68. How to get a countdown?**
    - ans:
