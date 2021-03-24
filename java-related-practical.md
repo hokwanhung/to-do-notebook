@@ -1083,11 +1083,11 @@
          - `Calendar.getInstance()`: `Calendar` object initialized with the current date/time, using default `Locale` and `TimeZone`
          - `new org.joda.time.DateTime()`: `Joda-time` obect initialized with the current date/time, using the defualt time zone and chronology. ("obsolete" - no longer in used, replaced by `java.time` package)
          - `java.time.LocalDateTime.now()` and `java.time.ZonedDateTime.now()` returns the current date/time (without a time-zone)
-   ```
-   import java.util.Date;
    
-   Date d = new Date();
-   ```
+**66a. How to use a `DateTimeFormatter`?**
+   - ans: 
+      - Initializing the formatter: `DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss")`
+      - Applying it to any `Date/Time` objects: `dtf.format([dateTimeObjectName])`
 
 **67. How to open a `JDialog` with a click on the button?**
    - ans:
@@ -1121,6 +1121,20 @@
 **67a. How to returna a value from a `JDialog` box to the parent `JFrame`?**
    - ans: By adding a custom method `getValue()` to the custom `JDialog`.
 
-**68. How to get a countdown?**
+##2021.03.24
+**68. How to set the size of a jDialog as default whenever it shows up?**
    - ans:
-   - explanation:
+      - By using `setSize()` or `setPreferredSize()` method (not recommended)
+      - **By using `pack` method (allows modification of users but also regulation from the manager)**
+         - The `pack()` method is defined in `Window` class.
+         - The size of the frame is set at or above its preferred size.
+
+**69. How to display multi-line text when text overflows a label?**
+   - ans: The only method is by wrapping it into a `<html></html>` codes.
+
+**69. How to get a countdown?**
+   - ans: Hard as it includes information about the `Date/Time` functions.
+
+**70. How to reset the status of a toggle button?**
+   - ans: By using the `setSelected()` method (simpliest way).
+   - 
