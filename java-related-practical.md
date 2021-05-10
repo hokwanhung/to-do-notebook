@@ -1035,7 +1035,7 @@
       - `%t`: Accepts `Date/Time(incl. long, Calendar, Date and TemporalAccessor)`, but requires more formatting flags to convert the `Date/Time`(`%t` is only the prefix).
       - `%x`: Accepts `integer(incl, byte, short, int, long, bigint)` and returns `Hex string`.
 
-##2021.02.18
+## 2021.02.18
 **60. How to get a String with whitespace wtihin?**
    - ans:
       - use `nextLine()` instead of `next()`
@@ -1121,7 +1121,7 @@
 **67a. How to returna a value from a `JDialog` box to the parent `JFrame`?**
    - ans: By adding a custom method `getValue()` to the custom `JDialog`.
 
-##2021.03.24
+## 2021.03.24
 **68. How to set the size of a jDialog as default whenever it shows up?**
    - ans:
       - By using `setSize()` or `setPreferredSize()` method (not recommended)
@@ -1138,3 +1138,89 @@
 **70. How to reset the status of a toggle button?**
    - ans: By using the `setSelected()` method (simpliest way).
    - 
+
+## 2021.05.10
+**71. How to split `String` into array of `character` string?**
+   - ans: `[String].split("(?!^)")`
+   - explanation:
+      - `^` matches the beginning of the string.
+
+**72. How to find the number of digits in a `String`?**
+   - ans:
+      - String-based Solution: `String.valueOf([input]).length()`
+         - Involves memory allocation for a String, with every evaluation.
+      - Logarithmic Approach: `Math.log10([input]) + 1`
+         - Remember that log10(0) is undefined.
+         - Significantly faster than String-based Solution as no process of data conversion.
+      - Repeated Multiplication: 
+      ```
+      int length = 0;
+      long temp = 0;
+      while (temp <= input) {
+         length++;
+         temp *= 10;
+      }
+      return length;
+      ```
+      - Dividing with the Power of Two:
+         - All numbers can be represented by the addition of powers of 2.
+      ```
+      int length = 1;
+      if (number >= 100000000) {
+          length += 8;
+          number /= 100000000;
+      }
+      if (number >= 10000) {
+          length += 4;
+          number /= 10000;
+      }
+      if (number >= 100) {
+          length += 2;
+          number /= 100;
+      }
+      if (number >= 10) {
+          length += 1;
+      }
+      return length;
+      ```
+   -  Divide and conquer:
+      - The bulkiest approach but also the fastest.
+   ```
+   if (number < 100000) {
+      if (number < 100) {
+           if (number < 10) {
+               return 1;
+           } else {
+               return 2;
+           }
+       } else {
+           if (number < 1000) {
+               return 3;
+           } else {
+               if (number < 10000) {
+                   return 4;
+               } else {
+                   return 5;
+               }
+           }
+       }
+   } else {
+       if (number < 10000000) {
+           if (number < 1000000) {
+               return 6;
+           } else {
+               return 7;
+           }
+       } else {
+           if (number < 100000000) {
+               return 8;
+           } else {
+               if (number < 1000000000) {
+                   return 9;
+               } else {
+                   return 10;
+               }
+           }
+       }
+   }
+   ```
