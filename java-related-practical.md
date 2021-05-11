@@ -1224,3 +1224,15 @@
        }
    }
    ```
+## 2021.05.11
+**73. What is `null` in java?**
+   - ans: "Merely a special literal that can be of any reference type".
+   - explanation:
+      - `null == null`
+      - For all reference types, the default value is `null`.
+
+**74. What is `sin()` and `asin()`?**
+   - ans: served as `sin()` and `sin-1()` in calculator.
+   - explanation:
+      - `sin([Radian])` accepts only radian instead of degree (a converter `Math.toRadians()` is needed).
+      - `asin()` returns values in radian (a converter `Math.toDegree()` is needed).
