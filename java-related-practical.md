@@ -1236,3 +1236,49 @@
    - explanation:
       - `sin([Radian])` accepts only radian instead of degree (a converter `Math.toRadians()` is needed).
       - `asin()` returns values in radian (a converter `Math.toDegree()` is needed).
+
+## 2021.05.16
+**75. What is the difference between `Double` and `double`?**
+   - ans: Object v.s. primitive data type
+   - explanation: Primitive data type is not available to using methods e.g. `equal()`.
+
+**76. How to convert `double` into `Double`?**
+   - ans: By using `Double` constructor - `Double [newVariableName] = new Double([variableName]);`
+
+**77. Basic Uses of a `StringBuffer`?**
+   - ans: Much faster way in printing out lines compared to straight up `System.out.println()`
+   - explanation:
+      - `StringBuffer sb = new StringBuffer()` = create a `StringBuffer` instance
+      - `append()` = store the output into the `StringBuffer`
+      - `System.out.print(sb)` = to "release" the output into the console.
+
+**78. How to count the number of occurance of a `char` in a `String`?**
+   - ans: 
+      - Imperative Approach: By using `for` loop and `charAt` method with counting the occurance from the first `char` to the last `char` of a `String`.
+      - Using Recursion: If the index exceeds the `String` length, returns 0. Otherwise, returns the count plus the function.
+      - Using Regular Expression: `Pattern` + `Matcher`
+
+**79. How to compare the equality of two `String`s?**
+   - ans:
+      - Using `==` operator: If referring to the same object, return `true`, vice versa (Comparing the object reference).
+         - If two or more objects are created without new keyword e.g. `new String([input])`, both objects refer same values. 
+      - Using `equals()` operator: If the contents of both `String`s are the same, return `true`, vice versa (comparing the content/data).
+      - Using `compareTo()` method: If the `char` with the same index is different based on the Unicode value, return the value of differences. Otherwise, return 0.
+      - Using `equalsIgnoreCase()` method
+      - Using `compare()` method: Can define custom comparison rules.
+
+**80. How to clear the `StringBuffer`?**
+   - ans:
+      - Creating a new `StringBuffer` after each iteration - may have performance issues.
+      - Use the `setLength(0)`
+      - Use `delete(0, [stringBufferName].length())`
+
+**81. How to get the last line using `Scanner`?**
+   - ans: By adding a stopping condition, it could stop the infinite loop.
+   - explanation:
+      - Either `hasNext()` or `hasNextLine()` has to receive a `complete token` for not blocking the following actions.
+         - For example, if the line is not finished e.g. no `Enter`, it is incomplete and thus the scanner will wait before doing the next action.
+
+**82. How to get the `substring` of a `String`?**
+   - ans: `subString([beginIndex], [endIndex])`
+   - explanation: The method gets the `substring` of the target from beginning index to ending index - 1 (index starts at 0).
