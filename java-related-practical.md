@@ -1282,3 +1282,9 @@
 **82. How to get the `substring` of a `String`?**
    - ans: `subString([beginIndex], [endIndex])`
    - explanation: The method gets the `substring` of the target from beginning index to ending index - 1 (index starts at 0).
+
+## 2021.05.18
+**83. How to compare two primitive data type?**
+   - ans: `==`
+   - explanation: All primitive data type could be examined with `==`.
+      - Object is different with its own comparison method.
