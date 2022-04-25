@@ -9,7 +9,7 @@ Diverse fields of knowledge related to CS learnt from universities.
       - The conversion of String to integer, as well as the stop of execution, relies on the main method (and the if-else statement inside).
       - The input of the method detectInput(String detectTarget) also request the user's input to be in a string form, though the user never knows.
 
-## Achievements-Earned
+## Progress-Works
    1. detect-Prime-Number
       - One of the exercise I did when I started to learn programming.
       - Aims to find the biggest prime number between 1 and the user's input.
