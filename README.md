@@ -8,6 +8,12 @@ Diverse fields of knowledge related to CS learnt from universities.
       - Returns a String instead of integer so as to fits with the detection of String "STOP".
       - The conversion of String to integer, as well as the stop of execution, relies on the main method (and the if-else statement inside).
       - The input of the method detectInput(String detectTarget) also request the user's input to be in a string form, though the user never knows.
+   2. HTMLConverter_v0
+      - Even with **Writage**, some of the formatting might still be wrong (i.e. in my case it is listing in table).
+      - As a result, I created a very rough program that allows me to implement different tags into the field, half-manually, so I can spare my hands from doing the same work over and over again.
+      - Current version allows:
+         - Insert /<li/> tag before and after the text.
+         - Insert the /<br/> tag before the text.
 
 ## Progress-Works
    1. detect-Prime-Number
