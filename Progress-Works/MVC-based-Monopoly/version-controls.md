@@ -5,7 +5,7 @@ However, some of the function, limited by the time constraint, still requires fu
   
 Things to do:  
   1. Modify the `GAME EDITOR` function to ensure the admin role is done
-    - Ensure that even the `admin` panel is closed, the game would still continue.
-    - Ensure that the `status` button is working fine.
+     - Ensure that even the `admin` panel is closed, the game would still continue.
+     - Ensure that the `status` button is working fine.
   3. Modify the `TRADE` function to enable in-game trading
   4. Enlarge the `GUI` to fit in all information.
