@@ -9,3 +9,8 @@ Things to do:
      - Ensure that the `status` button is working fine.
   3. Modify the `TRADE` function to enable in-game trading
   4. Enlarge the `GUI` to fit in all information.
+
+## Version 1.5
+The modified version, point 1 and 2 is done at this point, but before risking modifying the GUI, I decided to call a save so it does not create any unnecessary yet complicated and time-consuming problems.  
+  
+Things to do: Enlarge the `GUI` to fit in all information.
