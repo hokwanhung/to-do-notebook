@@ -27,3 +27,6 @@ Further modified version, there are much more hidden changes done in this one th
 More problems discovered:  
   1. The `buyLand` function is currently bugged and no lands can be bought after `editGame` function, which means the game is unplayable.
   2. Much more to upgrade into.
+
+Current Display:  
+<img src="https://github.com/travrs629/Learnt-from-Universities/blob/main/Progress-Works/MVC-based-Monopoly/src_v2/Display.png" width=550px height=300px>
