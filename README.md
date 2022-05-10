@@ -39,3 +39,6 @@ Diverse fields of knowledge related to CS learnt from universities.
          - Whenever the side is, as long as the goat is with the man, the condition is safe.
          - Whenever the side is, as long as the goat is with neither wolf nor cabbage, the condition is safe.
       - Then listing out all operators, the problem becomes a far easy question to deal with.
+  5. Monopoly-on-MVC
+      - A Monopoly game based on the MVC model. 
+      - More information on: https://github.com/travrs629/Learnt-from-Universities/blob/main/Progress-Works/MVC-based-Monopoly/version-controls.md
