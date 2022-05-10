@@ -30,3 +30,6 @@ More problems discovered:
 
 Current Display:  
 <img src="https://github.com/travrs629/Learnt-from-Universities/blob/main/Progress-Works/MVC-based-Monopoly/src_v2/Display.png" width=550px height=300px>
+
+## Version 2.5
+The newest version is currently under-construction which is unplayable, the `model` class is re-programmed to simplier and more user-friendly version. Some of the logic is also re-programmed. However, the `view` class, which is the `GUI` is not yet finished.
