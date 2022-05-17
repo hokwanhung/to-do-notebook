@@ -33,3 +33,9 @@ Current Display:
 
 ## Version 2.5
 The newest version is currently under-construction which is unplayable, the `model` class is re-programmed to simplier and more user-friendly version. Some of the logic is also re-programmed. However, the `view` class, which is the `GUI` is not yet finished.
+
+## Version 3
+Although the `GUI` is not finished, I have come up with two comments about using Java `Swing`:
+
+  1. Always draft out the preferred `GUI` before actual construction, it is a sure pain to re-construct it later.
+  2. View the components, especially `JPanel` in `Blocks` view, and leave out `gaps` and `line` border if you need to add more components later.
