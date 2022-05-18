@@ -39,3 +39,7 @@ Although the `GUI` is not finished, I have come up with two comments about using
 
   1. Always draft out the preferred `GUI` before actual construction, it is a sure pain to re-construct it later.
   2. View the components, especially `JPanel` in `Blocks` view, and leave out `gaps` and `line` border if you need to add more components later.
+
+A disastrous day as I lost my progress on the `GUI` on the day of 2022.05.18, here is a glance of what I have done so far:
+
+
