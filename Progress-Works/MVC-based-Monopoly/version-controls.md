@@ -41,5 +41,5 @@ Although the `GUI` is not finished, I have come up with two comments about using
   2. View the components, especially `JPanel` in `Blocks` view, and leave out `gaps` and `line` border if you need to add more components later.
 
 A disastrous day as I lost my progress on the `GUI` on the day of 2022.05.18, here is a glance of what I have done so far:
-
+<img src="https://github.com/travrs629/Learnt-from-Universities/blob/main/Progress-Works/MVC-based-Monopoly/src_v3/Displayv3.png" width=550px height=300px>
 
