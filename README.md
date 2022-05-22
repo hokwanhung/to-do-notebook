@@ -1,6 +1,9 @@
 # Learnt-from-Universities
 Diverse fields of knowledge related to CS learnt from universities.
 
+## How-to-Understand-Something
+<img src="https://github.com/travrs629/Learnt-from-Universities/blob/main/How-to-Understand.jpg">
+
 ## Self-made-Tools
    1. detect-Input-Type method
       - Detect input type and continuously requesting users until the correct type (integer) is given.
