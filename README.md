@@ -1,9 +1,6 @@
 # Learnt-from-Universities
 Diverse fields of knowledge related to CS learnt from universities.
 
-## How-to-Understand-Something
-<img src="https://github.com/travrs629/Learnt-from-Universities/blob/main/How-to-Understand.jpg">
-
 ## Self-made-Tools
    1. detect-Input-Type method
       - Detect input type and continuously requesting users until the correct type (integer) is given.
@@ -45,3 +42,6 @@ Diverse fields of knowledge related to CS learnt from universities.
   5. Monopoly-on-MVC
       - A Monopoly game based on the MVC model. 
       - More information on: https://github.com/travrs629/Learnt-from-Universities/blob/main/Progress-Works/MVC-based-Monopoly/version-controls.md
+
+## How-to-Understand-Something
+<img src="https://github.com/travrs629/Learnt-from-Universities/blob/main/How-to-Understand.jpg" height=600px width=515px>
