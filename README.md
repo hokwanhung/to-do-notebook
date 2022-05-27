@@ -3,6 +3,7 @@ Diverse fields of knowledge related to CS learnt from universities.
 
 ## CS-Knowledge
   1. Data Structures(unfinished): https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/data-structure.md
+  2. Software Engineering(unmodified): https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/software-engineering.md
 
 ## Self-made-Tools
    1. detect-Input-Type method
