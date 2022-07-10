@@ -7,7 +7,7 @@
 
 Yay, no errors, warnings, or alerts!
 
-Conversion time: 0.264 seconds.
+Conversion time: 0.235 seconds.
 
 
 Using this Markdown file:
@@ -20,7 +20,7 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β33
-* Sun Jul 10 2022 01:49:16 GMT-0700 (PDT)
+* Sun Jul 10 2022 01:50:07 GMT-0700 (PDT)
 * Source doc: Untitled document
 * Tables are currently converted to HTML tables.
 ----->
@@ -28,7 +28,7 @@ Conversion notes:
 <table>
   <tr>
    <td colspan="3" >
-<h1><strong>MySQL (relational) vs MongoDB (non-relational)</strong></h1>
+<h2><strong>MySQL (relational) vs MongoDB (non-relational)</strong></h2>
 
 
    </td>
