@@ -46,7 +46,7 @@ Diverse fields of knowledge related to CS learnt from universities.
       - Then listing out all operators, the problem becomes a far easy question to deal with.
   5. Monopoly-on-MVC
       - A Monopoly game based on the MVC model. 
-      - More information on: https://github.com/travrs629/Learnt-from-Universities/blob/main/Progress-Works/MVC-based-Monopoly/version-controls.md
+      - More information on: https://github.com/travrs629/Learnt-from-Universities/blob/main/Progress-Works/MVC-based-Monopoly/version-control.md
 
 ## How-to-Understand-Something
 <img src="https://github.com/travrs629/Learnt-from-Universities/blob/main/How-to-Understand.jpg" height=600px width=515px>
