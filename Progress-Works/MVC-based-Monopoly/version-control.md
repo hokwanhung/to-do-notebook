@@ -49,5 +49,5 @@ Things to do:
   4. Enlarge the `GUI` to fit in all information.
 
 # Requirements
-Check here: [COM3101 Project Description 202022.pdf](https://github.com/travrs629/Learnt-from-Universities/blob/main/Progress-Works/MVC-based-Monopoly/COM3101%20Project%20Description%202022.pdf)
+Check here: [COM3101 Project Description 202022.pdf](https://github.com/travrs629/Learnt-from-Universities/blob/main/Progress-Works/MVC-based-Monopoly/COM3101%20Project%20Description%202022.pdf)  
 Download here: [COM3101 Project Description 202022.pdf](https://github.com/travrs629/Learnt-from-Universities/raw/main/Progress-Works/MVC-based-Monopoly/COM3101%20Project%20Description%202022.pdf)
