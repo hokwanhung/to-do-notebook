@@ -2,7 +2,7 @@
 Diverse fields of knowledge related to CS learnt from universities.
 
 ## CS-Knowledge
-  1. Data Structures(unfinished): https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/data-structure.md
+  1. Data Structures(unfinished): https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/data-structure(unfinished).md
   2. Software Engineering(unmodified): https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/software-engineering.md
   3. Java Swing Navigation Table: https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/java-swing-navigation-table.md
   4. Java Naming Conventions (from Oracle): https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/java-naming-conventions.md
