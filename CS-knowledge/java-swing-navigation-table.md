@@ -2,7 +2,7 @@
 
 Yay, no errors, warnings, or alerts!
 
-Conversion time: 4.542 seconds.
+Conversion time: 6.229 seconds.
 
 
 Using this Markdown file:
@@ -15,31 +15,24 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β33
-* Sat Jul 09 2022 21:35:06 GMT-0700 (PDT)
-* Source doc: Untitled document
+* Sun Jul 17 2022 02:54:00 GMT-0700 (PDT)
+* Source doc: Navigation on Java Swing
 * Tables are currently converted to HTML tables.
-
-WARNING:
-You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 0.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p>
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
 ----->
+
+
+
 <table>
   <tr>
    <td colspan="2" >
-<h1><strong>Trail: Creating a GUI With Swing</strong></h1>
+<h2><strong>Trail: Creating a GUI With Swing</strong></h2>
 
 
    </td>
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/start/index.html">Getting Started with Swing</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/start/index.html">Getting Started with Swing</a></h3>
 
 
    </td>
@@ -55,7 +48,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/index.html">Learning Swing with the NetBeans IDE</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/index.html">Learning Swing with the NetBeans IDE</a></h3>
 
 
    </td>
@@ -77,7 +70,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/index.html">Using Swing Components</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/index.html">Using Swing Components</a></h3>
 
 
    </td>
@@ -110,7 +103,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html'">Concurrency in Swing</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html'">Concurrency in Swing</a></h3>
 
 
    </td>
@@ -139,7 +132,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/misc/index.html">Using Other Swing Features</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/misc/index.html">Using Other Swing Features</a></h3>
 
 
    </td>
@@ -179,7 +172,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/index.html">Laying Out Components Within a Container</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/index.html">Laying Out Components Within a Container</a></h3>
 
 
    </td>
@@ -226,7 +219,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/index.html">Modifying the Look and Feel</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/index.html">Modifying the Look and Feel</a></h3>
 
 
    </td>
@@ -258,7 +251,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/dnd/index.html">Drag and Drop and Data Transfer</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/dnd/index.html">Drag and Drop and Data Transfer</a></h3>
 
 
    </td>
@@ -331,7 +324,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/index.html">Writing Event Listeners</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/index.html">Writing Event Listeners</a></h3>
 
 
    </td>
@@ -355,7 +348,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/painting/index.html">Performing Custom Painting</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/painting/index.html">Performing Custom Painting</a></h3>
 
 
    </td>
@@ -364,7 +357,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2>Other UI-Related Trails</h2>
+<h3>Other UI-Related Trails</h3>
 
 
    </td>
@@ -400,14 +393,14 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 <table>
   <tr>
    <td colspan="2" >
-<h1><strong>Getting Started with Swing</strong></h1>
+<h2><strong>Getting Started with Swing</strong></h2>
 
 
    </td>
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/start/about.html">About the JFC and Swing</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/start/about.html">About the JFC and Swing</a></h3>
 
 
    </td>
@@ -416,7 +409,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/start/compile.html">Compiling and Running Swing Programs</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/start/compile.html">Compiling and Running Swing Programs</a></h3>
 
 
    </td>
@@ -430,14 +423,14 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 <table>
   <tr>
    <td colspan="2" >
-<h1><strong>Learning Swing with the NetBeans IDE</strong></h1>
+<h2><strong>Learning Swing with the NetBeans IDE</strong></h2>
 
 
    </td>
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/settingup.html">Setting up the CelsiusConverter Project</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/settingup.html">Setting up the CelsiusConverter Project</a></h3>
 
 
    </td>
@@ -453,7 +446,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/netbeansbasics.html">NetBeans IDE Basics</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/netbeansbasics.html">NetBeans IDE Basics</a></h3>
 
 
    </td>
@@ -473,7 +466,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/creatinggui.html">Creating the CelsiusConverter GUI</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/creatinggui.html">Creating the CelsiusConverter GUI</a></h3>
 
 
    </td>
@@ -489,7 +482,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/adjustinggui.html">Adjusting the CelsiusConverter GUI</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/adjustinggui.html">Adjusting the CelsiusConverter GUI</a></h3>
 
 
    </td>
@@ -507,7 +500,7 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/logic.html">Adding the Application Logic</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/learn/logic.html">Adding the Application Logic</a></h3>
 
 
    </td>
@@ -530,14 +523,14 @@ You have 9 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 <table>
   <tr>
    <td colspan="2" >
-<h1><strong>Using Swing Components</strong></h1>
+<h2><strong>Using Swing Components</strong></h2>
 
 
    </td>
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/toplevel.html">Using Top-Level Containers</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/toplevel.html">Using Top-Level Containers</a></h3>
 
 
    </td>
@@ -585,7 +578,7 @@ Method for adding a menu bar:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/jcomponent.html">The JComponent Class</a><span style="text-decoration:underline;"> [IMPORTANT]</span></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/jcomponent.html">The JComponent Class</a><span style="text-decoration:underline;"> [IMPORTANT]</span></h3>
 
 
    </td>
@@ -939,7 +932,7 @@ Methods on specifying absolute size and position:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/text.html">Using Text Components</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/text.html">Using Text Components</a></h3>
 
 
    </td>
@@ -1311,7 +1304,7 @@ Methods on manipulating Carets (DefaultCaret) and Selection highlighters:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/componentlist.html">How to Use Various Components</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/componentlist.html">How to Use Various Components</a></h3>
 
 
    </td>
@@ -1381,7 +1374,7 @@ Methods on manipulating Carets (DefaultCaret) and Selection highlighters:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/html.html">Using HTML in Swing Components</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/html.html">Using HTML in Swing Components</a></h3>
 
 
    </td>
@@ -1390,7 +1383,7 @@ Methods on manipulating Carets (DefaultCaret) and Selection highlighters:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/model.html">How to Use Models (as in for example, MVC)</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/model.html">How to Use Models (as in for example, MVC)</a></h3>
 
 
    </td>
@@ -1409,7 +1402,7 @@ Java Swing model is in a separable model architecture, instead of a simple MVC m
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/icon.html">How to Use Icons</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/icon.html">How to Use Icons</a></h3>
 
 
    </td>
@@ -1496,7 +1489,7 @@ Methods for the Image Icon API:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/border.html">How to Use Borders</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/border.html">How to Use Borders</a></h3>
 
 
    </td>
@@ -1570,7 +1563,7 @@ Methods on setting or getting a component’s border:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/problems.html">Solving Common Component Problems</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/components/problems.html">Solving Common Component Problems</a></h3>
 
 
    </td>
@@ -1597,14 +1590,14 @@ Methods on setting or getting a component’s border:
 <table>
   <tr>
    <td colspan="2" >
-<h1><strong>Concurrency in Swing</strong></h1>
+<h2><strong>Concurrency in Swing</strong></h2>
 
 
    </td>
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/concurrency/initial.html">Initial Threads</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/concurrency/initial.html">Initial Threads</a></h3>
 
 
    </td>
@@ -1654,7 +1647,7 @@ Methods to initializes the GUI:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/concurrency/dispatch.html">The Event Dispatch Thread</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/concurrency/dispatch.html">The Event Dispatch Thread</a></h3>
 
 
    </td>
@@ -1679,7 +1672,7 @@ Methods to initializes the GUI:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/concurrency/worker.html">Worker Threads and SwingWorker</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/concurrency/worker.html">Worker Threads and SwingWorker</a></h3>
 
 
    </td>
@@ -1775,14 +1768,14 @@ Information about bound properties and status methods:
 <table>
   <tr>
    <td colspan="2" >
-<h1><strong>Laying Out Components Within a Container</strong></h1>
+<h2><strong>Laying Out Components Within a Container</strong></h2>
 
 
    </td>
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html">A Visual Guide to Layout Managers</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html">A Visual Guide to Layout Managers</a></h3>
 
 
    </td>
@@ -1858,7 +1851,7 @@ Information about bound properties and status methods:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/using.html'">Using Layout Managers</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/using.html'">Using Layout Managers</a></h3>
 
 
    </td>
@@ -1931,7 +1924,7 @@ Tasks related to using Layout Managers:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/howLayoutWorks.html">How Layout Management Works</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/howLayoutWorks.html">How Layout Management Works</a></h3>
 
 
    </td>
@@ -1968,7 +1961,7 @@ Tasks related to using Layout Managers:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/layoutlist.html">How to Use Various Layout Managers</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/layoutlist.html">How to Use Various Layout Managers</a></h3>
 
 
    </td>
@@ -1996,7 +1989,7 @@ Tasks related to using Layout Managers:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/custom.html">Creating a Custom Layout Manager</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/custom.html">Creating a Custom Layout Manager</a></h3>
 
 
    </td>
@@ -2052,14 +2045,14 @@ Tasks related to using Layout Managers:
 <table>
   <tr>
    <td colspan="2" >
-<h1><strong>Modifying the Look and Feel</strong></h1>
+<h2><strong>Modifying the Look and Feel</strong></h2>
 
 
    </td>
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html">How to Set the Look and Feel</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html">How to Set the Look and Feel</a></h3>
 
 
    </td>
@@ -2170,7 +2163,7 @@ Introduction on Themes:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/synth.html">The Synth Look and Feel</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/synth.html">The Synth Look and Feel</a></h3>
 
 
    </td>
@@ -2179,7 +2172,7 @@ Introduction on Themes:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/nimbus.html">Nimbus Look and Feel</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/nimbus.html">Nimbus Look and Feel</a></h3>
 
 
    </td>
@@ -2193,14 +2186,14 @@ Introduction on Themes:
 <table>
   <tr>
    <td colspan="2" >
-<h1><strong>Drag and Drop and Data Transfer</strong></h1>
+<h2><strong>Drag and Drop and Data Transfer</strong></h2>
 
 
    </td>
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/dnd/intro.html">Introduction to DnD</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/dnd/intro.html">Introduction to DnD</a></h3>
 
 
    </td>
@@ -2221,7 +2214,7 @@ Introduction on Themes:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/dnd/defaultsupport.html">Default DnD Support</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/dnd/defaultsupport.html">Default DnD Support</a></h3>
 
 
    </td>
@@ -2285,7 +2278,7 @@ Components that require customisation:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/dnd/transferhandler.html">TransferHandler Class</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/dnd/transferhandler.html">TransferHandler Class</a></h3>
 
 
    </td>
@@ -2299,14 +2292,14 @@ Components that require customisation:
 <table>
   <tr>
    <td colspan="2" >
-<h1><strong>Writing Event Listeners</strong></h1>
+<h2><strong>Writing Event Listeners</strong></h2>
 
 
    </td>
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/intro.html">Introduction to Event Listeners</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/intro.html">Introduction to Event Listeners</a></h3>
 
 
    </td>
@@ -2322,7 +2315,7 @@ Components that require customisation:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/generalrules.html">General Information about Writing Event Listeners</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/generalrules.html">General Information about Writing Event Listeners</a></h3>
 
 
    </td>
@@ -2377,7 +2370,7 @@ Components that require customisation:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/eventsandcomponents.html">Listeners Supported by Swing Components</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/eventsandcomponents.html">Listeners Supported by Swing Components</a></h3>
 
 
    </td>
@@ -2430,7 +2423,7 @@ Other Listeners that Swing Components Support:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/handling.html">Implementing Listeners for Commonly Handled Events</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/handling.html">Implementing Listeners for Commonly Handled Events</a></h3>
 
 
    </td>
@@ -2488,7 +2481,7 @@ Other Listeners that Swing Components Support:
   </tr>
   <tr>
    <td>
-<h2><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/api.html">Listener API Table</a></h2>
+<h3><a href="https://docs.oracle.com/javase/tutorial/uiswing/events/api.html">Listener API Table</a></h3>
 
 
    </td>
