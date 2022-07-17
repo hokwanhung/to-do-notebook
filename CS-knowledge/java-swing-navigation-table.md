@@ -20,7 +20,7 @@ Conversion notes:
 * Tables are currently converted to HTML tables.
 ----->
 
-
+<h1>Java Swing Navigation Table</h1>
 
 <table>
   <tr>
