@@ -6,6 +6,7 @@ Diverse fields of knowledge related to CS learnt from universities.
   2. Software Engineering(unmodified): https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/software-engineering.md
   3. Java Swing Navigation Table: https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/java-swing-navigation-table.md
   4. Java Naming Conventions (from Oracle): https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/java-naming-conventions.md
+  5. Computer System (COM1103): https://github.com/travrs629/Learnt-from-Universities/blob/main/CS-knowledge/computer-systems.pdf
 
 ## Self-made-Tools
    1. detect-Input-Type method
